@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Document page</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-off{background:#E3F1E6;color:#1B6B32}
+.c-draft{background:#ECEEF2;color:#3D4552}
+.c-sup{background:#E8EEF9;color:#2B4C8C}
+.c-warn{background:#FDF0E1;color:#8A4B0B}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
+.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+.card{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:18px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;font-size:12px;color:#4A5361;font-weight:600;padding:8px 10px;border-bottom:1px solid #E3E6EB}
+.tbl td{padding:10px;border-bottom:1px solid #EEF0F3;vertical-align:top}
+.k{font-size:12px;color:#4A5361;font-weight:600}
+.v{font-size:14px;margin-top:3px}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a href="Expense.dc.html">Expenses</a>
+    <a href="Report.dc.html">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a href="Main.dc.html">Inbox</a>
+    <a class="on" href="Folder.dc.html">Folders</a>
+    <a href="Search.dc.html">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <label for="g-search" style="position: absolute; left: -9999px">Search documents</label>
+      <input id="g-search" class="in" type="search" placeholder="Search documents, TINs, invoice numbers…" style="flex: 1 1 280px; max-width: 520px">
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Carla Mendoza · Admin</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px">
+        <div style="flex: 1 1 360px">
+          <div style="font-size: 13px; color: #4A5361"><a href="Folder.dc.html">Admin</a> › <a href="Folder.dc.html">Leases</a></div>
+          <h1 style="margin: 6px 0 8px; font-size: 24px">Lease — ABC Realty, Unit 3B</h1>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: #4A5361">
+            <span>Contract</span><span aria-hidden="true">·</span><span>Official: v2 “Signed”</span><span aria-hidden="true">·</span><span class="chip c-warn">Expires 30 Jun 2027</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <button class="btn btn-s" type="button">Download original</button>
+          <button class="btn btn-s" type="button">Upload new version</button>
+          <button class="btn btn-p" type="button">Mark v3 official</button>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+        <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <section class="card" aria-label="Versions">
+            <h2 style="margin: 0 0 10px; font-size: 16px">Versions</h2>
+            <div style="overflow-x: auto">
+            <table class="tbl">
+              <thead><tr><th scope="col">Version</th><th scope="col">Status</th><th scope="col">Label</th><th scope="col">Added</th><th scope="col">Note</th></tr></thead>
+              <tbody>
+                <tr><td>v3</td><td><span class="chip c-draft">Draft</span></td><td>Rev C</td><td>Ana Reyes · 18 Oct 2026</td><td>Rent changed to ₱85,000 · based on v2</td></tr>
+                <tr><td>v2</td><td><span class="chip c-off">Official</span></td><td>Signed</td><td>Carla Mendoza · 2 Jul 2025</td><td>“Signed copy received”</td></tr>
+                <tr><td>v1</td><td><span class="chip c-sup">Superseded</span></td><td>For signature</td><td>Ana Reyes · 20 Jun 2025</td><td>—</td></tr>
+              </tbody>
+            </table>
+            </div>
+          </section>
+          <section class="card" aria-label="Details" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+            <h2 style="grid-column: 1 / -1; margin: 0; font-size: 16px">Details</h2>
+            <div><div class="k">Counterparty</div><div class="v">ABC Realty Inc.</div></div>
+            <div><div class="k">Signed on</div><div class="v">1 Jul 2025</div></div>
+            <div><div class="k">Expiry date</div><div class="v">30 Jun 2027</div></div>
+            <div><div class="k">Monthly rent</div><div class="v">₱80,000.00</div></div>
+            <div><div class="k">Sensitivity</div><div class="v">Internal</div></div>
+            <div><div class="k">Paper original</div><div class="v">Kept · Admin cabinet 1 · custodian Carla Mendoza</div></div>
+          </section>
+          <section class="card" aria-label="Links">
+            <h2 style="margin: 0 0 10px; font-size: 16px">Linked Officetul records</h2>
+            <ul style="margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 6px">
+              <li>lease for <a href="Expense.dc.html">Project “Makati branch office”</a></li>
+              <li>contract of <a href="Expense.dc.html">Supplier “ABC Realty Inc.”</a></li>
+            </ul>
+          </section>
+        </div>
+        <aside style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <section class="card" aria-label="Preview">
+            <h2 style="margin: 0 0 10px; font-size: 16px">Preview · v2</h2>
+            <div role="img" aria-label="Page 1 preview of the signed lease" style="height: 180px; border: 1px solid #CDD3DC; border-radius: 6px; background: #FAFBFC; padding: 14px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
+              <div style="height: 10px; width: 60%; background: #D5DAE2; border-radius: 3px"></div>
+              <div style="height: 8px; width: 92%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="height: 8px; width: 88%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="height: 8px; width: 75%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="margin-top: auto; font-size: 11px; color: #4A5361; text-align: center">Page 1 of 9</div>
+            </div>
+            <p style="margin: 10px 0 0; font-size: 13px; color: #4A5361">Integrity last verified 14 Oct 2026 · fingerprint matches</p>
+          </section>
+          <section class="card" aria-label="Why can I see this">
+            <h2 style="margin: 0 0 8px; font-size: 16px">Why can I see this?</h2>
+            <p style="margin: 0; font-size: 14px">Folder <strong>Admin › Leases</strong> gives the <strong>Admin</strong> role <strong>Manage</strong>.</p>
+            <p style="margin: 10px 0 0; font-size: 13px"><a href="Folder.dc.html">Who can see this document?</a></p>
+          </section>
+          <section class="card" aria-label="History">
+            <h2 style="margin: 0 0 10px; font-size: 16px">History</h2>
+            <ul style="margin: 0; padding: 0; list-style: none; font-size: 13px; display: flex; flex-direction: column; gap: 8px">
+              <li><strong>Ana Reyes</strong> uploaded v3 as Draft · 18 Oct 2026</li>
+              <li><strong>Ben Cruz</strong> viewed v2 · 12 Oct 2026</li>
+              <li><strong>Carla Mendoza</strong> marked v2 Official: “Signed copy received” · 2 Jul 2025</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

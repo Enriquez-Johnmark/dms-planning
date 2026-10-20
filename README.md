@@ -16,6 +16,7 @@ Research, decisions, and planning for a possible Document Management System (DMS
 | See what is still unanswered | [OPEN-QUESTIONS.md](OPEN-QUESTIONS.md) |
 | Find research notes | [RESEARCH-INDEX.md](RESEARCH-INDEX.md) |
 | Check a citation | [sources/SOURCE-REGISTER.md](sources/SOURCE-REGISTER.md) |
+| See what the app looks like | [design/](design/README.md) (six MVP screen sketches) |
 | Prepare for a partner meeting | Start with the [senior partner briefing pack](meeting-guides/00-senior-partner-briefing-pack.md); detail in [meeting-guides/](meeting-guides/) |
 
 ## Folder layout

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Expense 881 with Documents panel</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-off{background:#E3F1E6;color:#1B6B32}
+.c-warn{background:#FDF0E1;color:#8A4B0B}
+.c-blue{background:#E6EEFB;color:#1D4BAF}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
+.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+.card{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:18px}
+.k{font-size:12px;color:#4A5361;font-weight:600}
+.v{font-size:15px;margin-top:4px}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a class="on" href="Expense.dc.html" aria-current="page">Expenses</a>
+    <a href="Report.dc.html">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a href="Main.dc.html">Inbox</a>
+    <a href="Folder.dc.html">Folders</a>
+    <a href="Search.dc.html">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Ana Reyes · Finance</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+        <div style="flex: 1 1 320px">
+          <div style="font-size: 13px; color: #4A5361"><a href="Expense.dc.html">Expenses</a> ›</div>
+          <h1 style="margin: 4px 0 0; font-size: 24px">Expense #881 · Meralco</h1>
+        </div>
+        <span class="chip c-blue" style="font-size: 13px">Approved</span>
+        <button class="btn btn-s" type="button">Edit expense</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+        <section class="card" aria-label="Expense details" style="flex: 2 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
+          <div><div class="k">Supplier</div><div class="v">Manila Electric Company (Meralco)</div></div>
+          <div><div class="k">Expense date</div><div class="v">31 Mar 2026</div></div>
+          <div><div class="k">Amount</div><div class="v">₱8,452.30</div></div>
+          <div><div class="k">Category</div><div class="v">Utilities — electricity</div></div>
+          <div><div class="k">Branch</div><div class="v">Makati office</div></div>
+          <div><div class="k">Approved by</div><div class="v">Ben Cruz · 2 Apr 2026</div></div>
+          <div style="grid-column: 1 / -1; border-top: 1px solid #E3E6EB; padding-top: 14px; font-size: 13px; color: #4A5361">Part of Officetul Expenses. The panel on the right is added by the Documents app.</div>
+        </section>
+        <aside class="card" aria-label="Documents" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+            <h2 style="margin: 0; font-size: 16px">Documents</h2>
+            <button class="btn btn-p" type="button" style="height: 36px">Attach</button>
+          </div>
+          <div style="border: 1px solid #E3E6EB; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px">
+            <div style="font-size: 12px; color: #4A5361">invoice for</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-weight: 600; font-size: 14px">Meralco bill — March 2026</a><span class="chip c-off">Official</span></div>
+            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables</div>
+          </div>
+          <div style="border: 1px solid #E3E6EB; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; background: #FBFCFD">
+            <div style="font-size: 12px; color: #4A5361">receipt for</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><span style="font-weight: 600; font-size: 14px">receipt_881.jpg</span><span class="chip c-warn">Checking file…</span></div>
+            <div style="font-size: 13px; color: #4A5361">Virus check and preview in progress · will be filed as Payment receipt in Finance › Receipts</div>
+          </div>
+          <div style="border: 2px dashed #CDD3DC; border-radius: 10px; padding: 18px; text-align: center; font-size: 13px; color: #4A5361">Drop a file here, or attach a photo from your phone</div>
+        </aside>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

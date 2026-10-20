@@ -1,0 +1,20 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-21T09:00:00Z"},
+  "title": "Officetul Documents — MVP Screens",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1280, "h": 820, "title": "1 · Inbox: filing a captured file", "expand": "fill"},
+    "Document.dc.html": {"x": 1360, "y": 0, "w": 1280, "h": 820, "title": "2 · Document page", "expand": "fill"},
+    "Folder.dc.html": {"x": 2720, "y": 0, "w": 1280, "h": 820, "title": "3 · Folder list", "expand": "fill"},
+    "Search.dc.html": {"x": 0, "y": 940, "w": 1280, "h": 820, "title": "4 · Search results", "expand": "fill"},
+    "Expense.dc.html": {"x": 1360, "y": 940, "w": 1280, "h": 820, "title": "5 · Documents panel on Expense #881", "expand": "fill"},
+    "Report.dc.html": {"x": 2720, "y": 940, "w": 1280, "h": 820, "title": "6 · Expenses without an invoice or receipt", "expand": "fill"}
+  },
+  "order": ["Main.dc.html", "Document.dc.html", "Folder.dc.html", "Search.dc.html", "Expense.dc.html", "Report.dc.html"],
+  "notes": {
+    "heading": {"x": 0, "y": -300, "text": "Officetul Documents — MVP screens (sketch for the senior partner)", "kind": "title1", "maxW": 4000}
+  },
+  "designSystems": []
+}

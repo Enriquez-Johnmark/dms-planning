@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Expenses without an invoice or receipt</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-warn{background:#FDF0E1;color:#8A4B0B}
+.c-gray{background:#ECEEF2;color:#3D4552}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;font-size:12px;color:#4A5361;font-weight:600;padding:10px 12px;border-bottom:1px solid #E3E6EB;white-space:nowrap}
+.tbl td{padding:12px;border-bottom:1px solid #EEF0F3;vertical-align:top}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a href="Expense.dc.html">Expenses</a>
+    <a class="on" href="Report.dc.html" aria-current="page">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a href="Main.dc.html">Inbox</a>
+    <a href="Folder.dc.html">Folders</a>
+    <a href="Search.dc.html">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Ana Reyes · Finance</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+        <div style="flex: 1 1 360px">
+          <h1 style="margin: 0; font-size: 24px">Expenses without an invoice or receipt</h1>
+          <p style="margin: 6px 0 0; font-size: 14px; color: #4A5361">An expense counts as covered only when a linked invoice or receipt has an Official version and is not in Trash.</p>
+        </div>
+        <div style="flex: 0 1 180px"><label for="period" style="display: block; font-size: 12px; font-weight: 600; color: #4A5361; margin-bottom: 6px">Period</label><select id="period" class="in"><option>March 2026</option></select></div>
+        <button class="btn btn-s" type="button">Export CSV</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 16px">
+        <div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 16px 18px"><div style="font-size: 12px; font-weight: 600; color: #4A5361">Expenses missing a document</div><div style="font-size: 28px; font-weight: 700; margin-top: 6px">4</div></div>
+        <div style="flex: 1 1 200px; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 16px 18px"><div style="font-size: 12px; font-weight: 600; color: #4A5361">Amount without support</div><div style="font-size: 28px; font-weight: 700; margin-top: 6px">₱18,889.00</div></div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; overflow-x: auto">
+        <table class="tbl">
+          <thead><tr><th scope="col">Expense</th><th scope="col">Date</th><th scope="col">Supplier</th><th scope="col" class="num">Amount</th><th scope="col">Missing</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><td><a href="Expense.dc.html">#874</a></td><td>25 Mar 2026</td><td>Globe Business</td><td class="num">₱3,299.00</td><td><span class="chip c-warn">Invoice</span></td><td>Invoice is still a Draft</td></tr>
+            <tr><td><a href="Expense.dc.html">#868</a></td><td>18 Mar 2026</td><td>Petron — fuel</td><td class="num">₱2,150.00</td><td><span class="chip c-warn">Receipt</span></td><td>No document linked</td></tr>
+            <tr><td><a href="Expense.dc.html">#863</a></td><td>12 Mar 2026</td><td>Grab for Business</td><td class="num">₱640.00</td><td><span class="chip c-warn">Receipt</span></td><td>No document linked</td></tr>
+            <tr><td><a href="Expense.dc.html">#859</a></td><td>9 Mar 2026</td><td>ABC Hardware</td><td class="num">₱12,800.00</td><td><span class="chip c-warn">Invoice</span></td><td>Invoice withdrawn: “wrong supplier”</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: #4A5361">Available to roles that can see all finance folders.</p>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Folder list</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-off{background:#E3F1E6;color:#1B6B32}
+.c-draft{background:#ECEEF2;color:#3D4552}
+.c-warn{background:#FDF0E1;color:#8A4B0B}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
+.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+.pill{height:34px;padding:0 14px;border-radius:999px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+.pill-on{background:#1E2A44;color:#FFFFFF;border-color:#1E2A44}
+.tree a{display:block;padding:7px 10px;border-radius:6px;font-size:14px;color:#1F2328;text-decoration:none}
+.tree a:hover{background:#EEF1F5}
+.tree .sel{background:#E6EEFB;color:#1D4BAF;font-weight:600}
+.tag{font-size:11px;font-weight:600;color:#4A5361;border:1px solid #CDD3DC;border-radius:4px;padding:0 5px;margin-left:6px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th{text-align:left;font-size:12px;color:#4A5361;font-weight:600;padding:10px 12px;border-bottom:1px solid #E3E6EB;white-space:nowrap}
+.tbl td{padding:12px;border-bottom:1px solid #EEF0F3;vertical-align:top}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a href="Expense.dc.html">Expenses</a>
+    <a href="Report.dc.html">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a href="Main.dc.html">Inbox</a>
+    <a class="on" href="Folder.dc.html" aria-current="page">Folders</a>
+    <a href="Search.dc.html">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <label for="g-search" style="position: absolute; left: -9999px">Search documents</label>
+      <input id="g-search" class="in" type="search" placeholder="Search documents, TINs, invoice numbers…" style="flex: 1 1 280px; max-width: 520px">
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Ana Reyes · Finance</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+      <nav class="tree" aria-label="Folders" style="flex: 0 1 230px; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 12px">
+        <div style="font-size: 12px; font-weight: 600; color: #4A5361; padding: 4px 10px 8px">FOLDERS</div>
+        <a href="Folder.dc.html">Finance</a>
+        <a class="sel" href="Folder.dc.html" aria-current="page" style="padding-left: 24px">Payables</a>
+        <a href="Folder.dc.html" style="padding-left: 24px">Receipts</a>
+        <a href="Folder.dc.html" style="padding-left: 24px">Payroll<span class="tag">Restricted</span></a>
+        <a href="Folder.dc.html">HR</a>
+        <a href="Folder.dc.html" style="padding-left: 24px">Disciplinary cases<span class="tag">Confidential</span></a>
+        <a href="Folder.dc.html">Admin</a>
+        <a href="Document.dc.html" style="padding-left: 24px">Leases</a>
+        <a href="Folder.dc.html" style="padding-left: 24px">Permits</a>
+        <a href="Folder.dc.html">Trash</a>
+      </nav>
+      <section aria-label="Documents in Finance › Payables" style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+          <div style="flex: 1 1 320px">
+            <div style="font-size: 13px; color: #4A5361">Finance ›</div>
+            <h1 style="margin: 4px 0 6px; font-size: 24px">Payables</h1>
+            <p style="margin: 0; font-size: 13px; color: #4A5361">Accounting role: View · Finance managers: Manage · inherited from Finance · <a href="Document.dc.html">Who can see this?</a></p>
+          </div>
+          <button class="btn btn-s" type="button">New folder</button>
+          <button class="btn btn-p" type="button">Upload</button>
+        </div>
+        <div role="group" aria-label="Saved filters" style="display: flex; flex-wrap: wrap; gap: 8px">
+          <button class="pill pill-on" type="button" aria-pressed="true">All · 214</button>
+          <button class="pill" type="button" aria-pressed="false">No Official version · 3</button>
+          <button class="pill" type="button" aria-pressed="false">Expiring in 60 days · 1</button>
+          <button class="pill" type="button" aria-pressed="false">Paper original kept</button>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; overflow-x: auto">
+          <table class="tbl">
+            <thead><tr><th scope="col">Title</th><th scope="col">Type</th><th scope="col">Document date</th><th scope="col">Status</th><th scope="col">Linked to</th></tr></thead>
+            <tbody>
+              <tr><td><a href="Document.dc.html">Meralco bill — March 2026</a></td><td>Invoice (purchase)</td><td>31 Mar 2026</td><td><span class="chip c-off">Official</span></td><td>invoice for Expense #881</td></tr>
+              <tr><td><a href="Document.dc.html">ABC Trading invoice 1043</a></td><td>Invoice (purchase)</td><td>28 Mar 2026</td><td><span class="chip c-off">Official</span></td><td>invoice for Expense #879</td></tr>
+              <tr><td><a href="Document.dc.html">BIR 2307 — ABC Trading, Q1 2026</a></td><td>BIR 2307</td><td>15 Apr 2026</td><td><span class="chip c-off">Official</span></td><td>—</td></tr>
+              <tr><td><a href="Document.dc.html">Globe Business invoice — March</a></td><td>Invoice (purchase)</td><td>25 Mar 2026</td><td><span class="chip c-draft">Draft</span></td><td>invoice for Expense #874</td></tr>
+              <tr><td><a href="Document.dc.html">Office supplies receipt — National Book Store</a></td><td>Payment receipt</td><td>22 Mar 2026</td><td><span class="chip c-off">Official</span></td><td>receipt for Expense #872</td></tr>
+              <tr><td><a href="Document.dc.html">Courier service agreement — LBC</a></td><td>Contract</td><td>3 Jan 2026</td><td><span class="chip c-off">Official</span> <span class="chip c-warn">Expires 2 Dec 2026</span></td><td>contract of Supplier “LBC Express”</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin: 0; font-size: 13px; color: #4A5361">Showing 6 of 214 · newest document date first</p>
+      </section>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

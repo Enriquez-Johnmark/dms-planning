@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Documents Inbox</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-blue{background:#E6EEFB;color:#1D4BAF}
+.c-warn{background:#FDF0E1;color:#8A4B0B}
+.c-gray{background:#ECEEF2;color:#3D4552}
+.lbl{display:block;font-size:12px;font-weight:600;color:#4A5361;margin-bottom:6px}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
+.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a href="Expense.dc.html">Expenses</a>
+    <a href="Report.dc.html">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a class="on" href="Main.dc.html" aria-current="page">Inbox <span style="float: right; background: #2457C5; border-radius: 999px; padding: 0 7px; font-size: 12px">5</span></a>
+    <a href="Folder.dc.html">Folders</a>
+    <a href="Search.dc.html">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <label for="g-search" style="position: absolute; left: -9999px">Search documents</label>
+      <input id="g-search" class="in" type="search" placeholder="Search documents, TINs, invoice numbers…" style="flex: 1 1 280px; max-width: 520px">
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Ana Reyes · Finance</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
+        <div style="flex: 1 1 320px">
+          <h1 style="margin: 0; font-size: 24px">Inbox</h1>
+          <p style="margin: 6px 0 0; font-size: 14px; color: #4A5361">Captured files waiting to be filed. Visible only to the person who captured them and to Inbox reviewers.</p>
+        </div>
+        <button class="btn btn-p" type="button">Upload files</button>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+        <section aria-label="Inbox items" style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; overflow: hidden">
+          <div style="padding: 14px 16px; background: #EEF3FC; border-bottom: 1px solid #E3E6EB; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; gap: 8px"><strong style="font-size: 14px">Meralco_Mar2026.pdf</strong><span class="chip c-blue">Ready to file</span></div>
+            <div style="font-size: 13px; color: #4A5361">Upload · Ana Reyes · 10:42</div>
+          </div>
+          <div style="padding: 14px 16px; border-bottom: 1px solid #E3E6EB; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; gap: 8px"><strong style="font-size: 14px">IMG_2041.jpg</strong><span class="chip c-blue">Ready to file</span></div>
+            <div style="font-size: 13px; color: #4A5361">Phone upload · Rosa Santos · 10:15</div>
+          </div>
+          <div style="padding: 14px 16px; border-bottom: 1px solid #E3E6EB; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; gap: 8px"><strong style="font-size: 14px">scan_0012.pdf</strong><span class="chip c-warn">Security check pending</span></div>
+            <div style="font-size: 13px; color: #4A5361">Upload · Ben Cruz · 10:02</div>
+          </div>
+          <div style="padding: 14px 16px; border-bottom: 1px solid #E3E6EB; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; gap: 8px"><strong style="font-size: 14px">BPI_Statement_Sep.pdf</strong><span class="chip c-warn">Password-protected</span></div>
+            <div style="font-size: 13px; color: #4A5361">Upload · Ana Reyes · 09:30 · a company admin must accept it</div>
+          </div>
+          <div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 6px">
+            <div style="display: flex; justify-content: space-between; gap: 8px"><strong style="font-size: 14px">ABC_Invoice_1043.pdf</strong><span class="chip c-gray">Possible duplicate</span></div>
+            <div style="font-size: 13px; color: #4A5361">Upload · Ben Cruz · Yesterday · same file as “ABC Trading invoice 1043”</div>
+          </div>
+        </section>
+        <section aria-label="File this item" style="flex: 2 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px">
+            <h2 style="margin: 0; font-size: 18px">File “Meralco_Mar2026.pdf”</h2>
+            <span style="font-size: 13px; color: #4A5361">2 pages · 1.2 MB · virus check passed · fingerprint recorded</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <div role="img" aria-label="Page 1 preview of the Meralco bill" style="flex: 0 0 150px; height: 200px; border: 1px solid #CDD3DC; border-radius: 6px; background: #FAFBFC; display: flex; flex-direction: column; gap: 8px; padding: 14px; box-sizing: border-box">
+              <div style="height: 10px; width: 70%; background: #D5DAE2; border-radius: 3px"></div>
+              <div style="height: 8px; width: 90%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="height: 8px; width: 85%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="height: 8px; width: 60%; background: #E3E6EB; border-radius: 3px"></div>
+              <div style="margin-top: auto; font-size: 11px; color: #4A5361; text-align: center">Page 1 of 2</div>
+            </div>
+            <div style="flex: 1 1 300px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+              <div><label class="lbl" for="f-type">Document type</label><select id="f-type" class="in"><option>Invoice (purchase)</option></select></div>
+              <div><label class="lbl" for="f-folder">Folder</label><select id="f-folder" class="in"><option>Finance › Payables</option></select></div>
+              <div><label class="lbl" for="f-supp">Supplier</label><input id="f-supp" class="in" value="Manila Electric Company"></div>
+              <div><label class="lbl" for="f-tin">Supplier TIN</label><input id="f-tin" class="in" value="123-456-789-000"></div>
+              <div><label class="lbl" for="f-date">Document date</label><input id="f-date" class="in" value="31 Mar 2026"></div>
+              <div><label class="lbl" for="f-amt">Amount</label><input id="f-amt" class="in" value="₱8,452.30"></div>
+            </div>
+          </div>
+          <fieldset style="border: 1px solid #E3E6EB; border-radius: 8px; padding: 12px 14px; margin: 0; display: flex; flex-wrap: wrap; gap: 18px; align-items: center">
+            <legend class="lbl" style="padding: 0 4px; margin: 0">File as</legend>
+            <label style="font-size: 14px; display: flex; gap: 8px; align-items: center"><input type="radio" name="fileas" checked> Official record <span style="color: #4A5361">(default for invoices)</span></label>
+            <label style="font-size: 14px; display: flex; gap: 8px; align-items: center"><input type="radio" name="fileas"> Draft</label>
+          </fieldset>
+          <div style="display: flex; flex-wrap: wrap; gap: 14px">
+            <div style="flex: 1 1 260px"><label class="lbl" for="f-link">Link to an Officetul record</label><div style="display: flex; gap: 8px"><select id="f-link-type" class="in" aria-label="Link type" style="flex: 0 0 130px"><option>invoice for</option></select><input id="f-link" class="in" value="Expense #881 · Meralco · ₱8,452.30"></div></div>
+            <div style="flex: 1 1 260px"><span class="lbl">Paper original</span><div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px"><label style="display: flex; gap: 6px; align-items: center"><input type="checkbox" checked> Kept</label><label for="f-where" style="position: absolute; left: -9999px">Where it is kept</label><input id="f-where" class="in" value="Finance cabinet 2 · Utilities 2026" style="flex: 1 1 180px"></div></div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; border-top: 1px solid #E3E6EB; padding-top: 16px">
+            <button class="btn btn-p" type="button">File document</button>
+            <button class="btn btn-s" type="button">Reject</button>
+            <span style="font-size: 13px; color: #4A5361">Rejected items are deleted after 30 days.</span>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Search results</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
+a{color:#2457C5}a:hover{color:#1A3F94}
+.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
+.nav a:hover{background:#2E3D61;color:#FFFFFF}
+.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.c-off{background:#E3F1E6;color:#1B6B32}
+.c-draft{background:#ECEEF2;color:#3D4552}
+.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
+.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
+.fl{display:flex;gap:8px;align-items:center;font-size:14px;padding:4px 0}
+.fh{font-size:12px;font-weight:600;color:#4A5361;margin:14px 0 4px}
+.res{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+mark{background:#FFF1B8;color:#1F2328;padding:0 1px}
+</style>
+</helmet>
+<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
+    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
+    <a href="Expense.dc.html">Expenses</a>
+    <a href="Report.dc.html">Accounting reports</a>
+    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
+    <a href="Main.dc.html">Inbox</a>
+    <a href="Folder.dc.html">Folders</a>
+    <a class="on" href="Search.dc.html" aria-current="page">Search</a>
+  </nav>
+  <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
+      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
+      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Maria Lopez · Accounting</div>
+    </header>
+    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
+      <form role="search" style="display: flex; flex-wrap: wrap; gap: 10px">
+        <label for="q" style="position: absolute; left: -9999px">Search documents</label>
+        <input id="q" class="in" type="search" value="meralco march" style="flex: 1 1 360px; height: 46px; font-size: 16px">
+        <button class="btn btn-p" type="submit" style="height: 46px">Search</button>
+      </form>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+        <aside aria-label="Filters" style="flex: 0 1 220px; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 6px 16px 16px">
+          <div class="fh">Document type</div>
+          <label class="fl"><input type="checkbox" checked> Invoice (purchase) · 2</label>
+          <label class="fl"><input type="checkbox" checked> Payment receipt · 1</label>
+          <div class="fh">Folder</div>
+          <label class="fl"><input type="checkbox" checked> Finance › Payables · 2</label>
+          <label class="fl"><input type="checkbox" checked> Finance › Receipts · 1</label>
+          <div class="fh">Document date</div>
+          <label class="fl" for="d1">From</label>
+          <input id="d1" class="in" value="1 Mar 2026">
+          <label class="fl" for="d2">To</label>
+          <input id="d2" class="in" value="30 Apr 2026">
+          <p style="margin: 14px 0 0; font-size: 12px; color: #4A5361">Counts only include documents you can open.</p>
+        </aside>
+        <section aria-label="Results" style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+          <div style="font-size: 14px; color: #4A5361">3 results · Official versions · newest first</div>
+          <article class="res">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Meralco bill — March 2026</a><span class="chip c-off">Official</span></div>
+            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables · 31 Mar 2026 · invoice for Expense #881</div>
+            <p style="margin: 0; font-size: 14px">Page 2: “…<mark>Meralco</mark> billing period <mark>March</mark> 2026, total amount due ₱8,452.30…”</p>
+          </article>
+          <article class="res">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Payment receipt — Meralco, paid 8 Apr 2026</a><span class="chip c-off">Official</span></div>
+            <div style="font-size: 13px; color: #4A5361">Payment receipt · Finance › Receipts · 8 Apr 2026 · phone photo</div>
+            <p style="margin: 0; font-size: 14px">Page 1: “…received from Dela Cruz Trading for <mark>Meralco</mark> account, <mark>March</mark> billing…”</p>
+          </article>
+          <article class="res">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Meralco bill — February 2026</a><span class="chip c-off">Official</span></div>
+            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables · 28 Feb 2026 · invoice for Expense #866</div>
+            <p style="margin: 0; font-size: 14px">Page 2: “…next reading date 2 <mark>March</mark> 2026 · <mark>Meralco</mark> customer service…”</p>
+          </article>
+          <div style="font-size: 13px; color: #4A5361; border-top: 1px solid #E3E6EB; padding-top: 12px">Tip: search a TIN or invoice number with or without dashes, e.g. 123456789000.</div>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

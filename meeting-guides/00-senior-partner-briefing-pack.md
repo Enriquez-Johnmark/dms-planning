@@ -28,6 +28,8 @@ This pack replaces reading six separate meeting guides. It puts every decision t
 
 ---
 
+**Screens:** see the [six MVP screen sketches](../design/README.md) (Inbox, Document page, Folder list, Search, the Documents panel on an expense, and the missing-receipts report).
+
 ## Decision sheet
 
 Fill in the answer column during the meeting. Items 1–4 are **urgent**: each month they wait, every date moves by a month (risk RK-74).

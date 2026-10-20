@@ -9,83 +9,124 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
-a{color:#2457C5}a:hover{color:#1A3F94}
-.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
-.nav a:hover{background:#2E3D61;color:#FFFFFF}
-.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
-.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
-.c-off{background:#E3F1E6;color:#1B6B32}
-.c-warn{background:#FDF0E1;color:#8A4B0B}
-.c-blue{background:#E6EEFB;color:#1D4BAF}
-.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
-.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
-.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
-.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
-.card{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:18px}
-.k{font-size:12px;color:#4A5361;font-weight:600}
-.v{font-size:15px;margin-top:4px}
+body{margin:0;background:#F4F5F7;color:#14171F;font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:#3A55D6;text-decoration:none}a:hover{color:#2A41B0;text-decoration:underline}
+h1,h2,h3{font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;letter-spacing:-0.01em;margin:0}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nav a{display:flex;align-items:center;gap:10px;height:38px;padding:0 10px;border-radius:8px;color:#3F4652;font-weight:500;text-decoration:none}
+.nav a:hover{background:#F0F2F5;color:#14171F;text-decoration:none}
+.nav a.on{background:#EEF1FD;color:#2A41B0;font-weight:600}
+.nsec{font-size:11px;font-weight:600;letter-spacing:.08em;color:#6B7280;text-transform:uppercase;padding:18px 10px 6px}
+.count{margin-left:auto;background:#3A55D6;color:#FFFFFF;font-size:11.5px;font-weight:600;border-radius:999px;padding:1px 8px}
+.card{background:#FFFFFF;border:1px solid #E4E7EC;border-radius:14px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn-p{background:#3A55D6;color:#FFFFFF;box-shadow:0 1px 2px rgba(58,85,214,.25)}
+.btn-s{background:#FFFFFF;color:#14171F;border-color:#D9DDE3}
+.st{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.st::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.st-ok{background:#E7F5EC;color:#17663A}
+.st-info{background:#EEF1FD;color:#2A41B0}
+.st-warn{background:#FFF3E3;color:#8F4706}
+.ft{position:relative;flex:none;width:34px;height:42px;border-radius:7px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;box-sizing:border-box;font-size:9.5px;font-weight:700;letter-spacing:.04em;color:#FFFFFF}
+.ft::after{content:'';position:absolute;top:0;right:0;width:10px;height:10px;background:rgba(255,255,255,.4);border-bottom-left-radius:4px}
+.ft-pdf{background:#B93A1E}.ft-img{background:#2F6FDB}
+.k{font-size:12px;font-weight:600;color:#5A6270}
+.v{margin:4px 0 0;font-weight:500}
+.sp{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600}
 </style>
 </helmet>
-<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
-  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
-    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
-    <a class="on" href="Expense.dc.html" aria-current="page">Expenses</a>
-    <a href="Report.dc.html">Accounting reports</a>
-    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
-    <a href="Main.dc.html">Inbox</a>
-    <a href="Folder.dc.html">Folders</a>
-    <a href="Search.dc.html">Search</a>
+<div style="display: flex; flex-wrap: wrap; min-height: 900px; width: 100%; max-width: 1280px; margin: 0 auto; background: #F4F5F7">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 232px; box-sizing: border-box; background: #FFFFFF; border-right: 1px solid #E4E7EC; padding: 18px 12px; display: flex; flex-direction: column; gap: 2px">
+    <div style="display: flex; align-items: center; gap: 10px; padding: 2px 10px 14px">
+      <div aria-hidden="true" style="width: 30px; height: 30px; border-radius: 9px; background: #14171F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif">O</div>
+      <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 17px">Officetul</span>
+    </div>
+    <a class="on" href="Expense.dc.html" aria-current="page"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18l2-1.5L9 21l2-1.5L13 21l2-1.5L17 21l2-1.5V3l-2 1.5L15 3l-2 1.5L11 3 9 4.5 7 3z"/><path d="M9 8h6M9 12h6"/></svg>Expenses</a>
+    <a href="Report.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M22 20H2"/></svg>Accounting reports</a>
+    <div class="nsec">Documents</div>
+    <a href="Main.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/></svg>Inbox<span class="count">5</span></a>
+    <a href="Folder.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Folders</a>
+    <a href="Search.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   </nav>
   <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
-    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
-      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
-      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Ana Reyes · Finance</div>
-    </header>
-    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
-      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px">
-        <div style="flex: 1 1 320px">
-          <div style="font-size: 13px; color: #4A5361"><a href="Expense.dc.html">Expenses</a> ›</div>
-          <h1 style="margin: 4px 0 0; font-size: 24px">Expense #881 · Meralco</h1>
-        </div>
-        <span class="chip c-blue" style="font-size: 13px">Approved</span>
-        <button class="btn btn-s" type="button">Edit expense</button>
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E4E7EC">
+      <div style="display: flex; align-items: center; gap: 10px; font-weight: 600">
+        <div aria-hidden="true" style="width: 28px; height: 28px; border-radius: 8px; background: #E9F3EE; color: #17663A; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700">DC</div>Dela Cruz Trading Corp.
       </div>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 10px">
+        <div style="text-align: right; line-height: 1.25"><div style="font-weight: 600; font-size: 13px">Ana Reyes</div><div style="font-size: 12px; color: #5A6270">Finance</div></div>
+        <div aria-hidden="true" style="width: 34px; height: 34px; border-radius: 50%; background: #EEF1FD; color: #2A41B0; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">AR</div>
+      </div>
+    </header>
+    <div style="padding: 22px 28px 32px; display: flex; flex-direction: column; gap: 20px">
+      <div style="font-size: 13px; color: #5A6270; display: flex; align-items: center; gap: 6px"><a href="Expense.dc.html">Expenses</a><span aria-hidden="true">/</span><span>#881</span></div>
       <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
-        <section class="card" aria-label="Expense details" style="flex: 2 1 420px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px">
-          <div><div class="k">Supplier</div><div class="v">Manila Electric Company (Meralco)</div></div>
-          <div><div class="k">Expense date</div><div class="v">31 Mar 2026</div></div>
-          <div><div class="k">Amount</div><div class="v">₱8,452.30</div></div>
-          <div><div class="k">Category</div><div class="v">Utilities — electricity</div></div>
-          <div><div class="k">Branch</div><div class="v">Makati office</div></div>
-          <div><div class="k">Approved by</div><div class="v">Ben Cruz · 2 Apr 2026</div></div>
-          <div style="grid-column: 1 / -1; border-top: 1px solid #E3E6EB; padding-top: 14px; font-size: 13px; color: #4A5361">Part of Officetul Expenses. The panel on the right is added by the Documents app.</div>
+        <section class="card" aria-label="Expense details" style="flex: 2 1 440px; min-width: 0; overflow: hidden">
+          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; padding: 22px 24px; border-bottom: 1px solid #EEF0F3">
+            <div style="flex: 1 1 260px">
+              <div style="display: flex; align-items: center; gap: 10px"><h1 style="font-size: 24px">Expense #881</h1><span class="st st-info">Approved</span></div>
+              <div style="margin-top: 4px; color: #5A6270">Manila Electric Company (Meralco)</div>
+            </div>
+            <div style="text-align: right">
+              <div class="k">Amount</div>
+              <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 28px; font-weight: 700; letter-spacing: -0.02em">₱8,452.30</div>
+            </div>
+          </div>
+          <dl style="margin: 0; padding: 20px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 18px 24px">
+            <div><dt class="k">Expense date</dt><dd class="v">31 Mar 2026</dd></div>
+            <div><dt class="k">Category</dt><dd class="v">Utilities — electricity</dd></div>
+            <div><dt class="k">Branch</dt><dd class="v">Makati office</dd></div>
+            <div><dt class="k">Approved by</dt><dd class="v">Ben Cruz · 2 Apr 2026</dd></div>
+            <div><dt class="k">Supplier TIN</dt><dd class="v mono">123-456-789-000</dd></div>
+            <div><dt class="k">Payment</dt><dd class="v">Bank transfer · 8 Apr 2026</dd></div>
+          </dl>
+          <div style="display: flex; justify-content: flex-end; gap: 8px; padding: 14px 24px; background: #FAFBFC; border-top: 1px solid #EEF0F3">
+            <button class="btn btn-s" type="button">Edit expense</button>
+          </div>
         </section>
-        <aside class="card" aria-label="Documents" style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+        <aside class="card" aria-label="Documents" style="flex: 1 1 340px; min-width: 0; padding: 18px; display: flex; flex-direction: column; gap: 14px">
           <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
-            <h2 style="margin: 0; font-size: 16px">Documents</h2>
-            <button class="btn btn-p" type="button" style="height: 36px">Attach</button>
+            <div><h2 style="font-size: 16px">Documents</h2><div style="font-size: 12px; color: #5A6270; margin-top: 2px">From the Documents app</div></div>
+            <button class="btn btn-p" type="button" style="height: 36px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Attach</button>
           </div>
-          <div style="border: 1px solid #E3E6EB; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px">
-            <div style="font-size: 12px; color: #4A5361">invoice for</div>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-weight: 600; font-size: 14px">Meralco bill — March 2026</a><span class="chip c-off">Official</span></div>
-            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables</div>
+          <div style="display: flex; gap: 12px; border: 1px solid #E4E7EC; border-radius: 12px; padding: 12px 14px">
+            <span class="ft ft-pdf" aria-hidden="true">PDF</span>
+            <div style="flex: 1; min-width: 0">
+              <div style="font-size: 12px; color: #5A6270">invoice for</div>
+              <a href="Document.dc.html" style="font-weight: 600; color: #14171F">Meralco bill — March 2026</a>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px"><span class="st st-ok">Official</span><span style="font-size: 12px; color: #5A6270">Finance / Payables</span></div>
+            </div>
           </div>
-          <div style="border: 1px solid #E3E6EB; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; background: #FBFCFD">
-            <div style="font-size: 12px; color: #4A5361">receipt for</div>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><span style="font-weight: 600; font-size: 14px">receipt_881.jpg</span><span class="chip c-warn">Checking file…</span></div>
-            <div style="font-size: 13px; color: #4A5361">Virus check and preview in progress · will be filed as Payment receipt in Finance › Receipts</div>
+          <div style="display: flex; gap: 12px; border: 1px solid #C9D3F5; background: #F7F9FF; border-radius: 12px; padding: 12px 14px">
+            <span class="ft ft-img" aria-hidden="true">JPG</span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+              <div>
+                <div style="font-size: 12px; color: #5A6270">receipt for</div>
+                <div style="font-weight: 600">receipt_881.jpg</div>
+              </div>
+              <div><label for="att-type" class="sr">Document type</label><select id="att-type" style="width: 100%; height: 34px; border: 1px solid #D9DDE3; border-radius: 8px; padding: 0 10px; font: inherit; background: #FFFFFF"><option>Payment receipt → Finance / Receipts</option></select></div>
+              <ol aria-label="Checking file" style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px">
+                <li class="sp" style="color: #17663A"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Uploaded</li>
+                <li class="sp" style="color: #8F4706"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Virus check</li>
+                <li class="sp" style="color: #5A6270"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>Preview and text</li>
+              </ol>
+            </div>
           </div>
-          <div style="border: 2px dashed #CDD3DC; border-radius: 10px; padding: 18px; text-align: center; font-size: 13px; color: #4A5361">Drop a file here, or attach a photo from your phone</div>
+          <div style="border: 1.5px dashed #C3C9D3; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; color: #5A6270">
+            <div aria-hidden="true" style="width: 40px; height: 40px; border-radius: 12px; background: #F0F2F5; color: #3F4652; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg></div>
+            <div style="font-weight: 600; color: #14171F">Drop a file to attach</div>
+            <div style="font-size: 12.5px">or take a photo with your phone and upload it</div>
+          </div>
         </aside>
       </div>
     </div>
   </main>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":900}}'>
 class Component extends DCLogic {
   renderVals() {
     return {};

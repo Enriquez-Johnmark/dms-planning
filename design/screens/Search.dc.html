@@ -9,86 +9,122 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
-a{color:#2457C5}a:hover{color:#1A3F94}
-.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
-.nav a:hover{background:#2E3D61;color:#FFFFFF}
-.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
-.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
-.c-off{background:#E3F1E6;color:#1B6B32}
-.c-draft{background:#ECEEF2;color:#3D4552}
-.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
-.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
-.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
-.fl{display:flex;gap:8px;align-items:center;font-size:14px;padding:4px 0}
-.fh{font-size:12px;font-weight:600;color:#4A5361;margin:14px 0 4px}
-.res{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
-mark{background:#FFF1B8;color:#1F2328;padding:0 1px}
+body{margin:0;background:#F4F5F7;color:#14171F;font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:#3A55D6;text-decoration:none}a:hover{color:#2A41B0;text-decoration:underline}
+h1,h2,h3{font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;letter-spacing:-0.01em;margin:0}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nav a{display:flex;align-items:center;gap:10px;height:38px;padding:0 10px;border-radius:8px;color:#3F4652;font-weight:500;text-decoration:none}
+.nav a:hover{background:#F0F2F5;color:#14171F;text-decoration:none}
+.nav a.on{background:#EEF1FD;color:#2A41B0;font-weight:600}
+.nsec{font-size:11px;font-weight:600;letter-spacing:.08em;color:#6B7280;text-transform:uppercase;padding:18px 10px 6px}
+.count{margin-left:auto;background:#3A55D6;color:#FFFFFF;font-size:11.5px;font-weight:600;border-radius:999px;padding:1px 8px}
+.card{background:#FFFFFF;border:1px solid #E4E7EC;border-radius:14px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn-p{background:#3A55D6;color:#FFFFFF;box-shadow:0 1px 2px rgba(58,85,214,.25)}
+.st{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.st::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.st-ok{background:#E7F5EC;color:#17663A}
+.ft{position:relative;flex:none;width:34px;height:42px;border-radius:7px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;box-sizing:border-box;font-size:9.5px;font-weight:700;letter-spacing:.04em;color:#FFFFFF}
+.ft::after{content:'';position:absolute;top:0;right:0;width:10px;height:10px;background:rgba(255,255,255,.4);border-bottom-left-radius:4px}
+.ft-pdf{background:#B93A1E}.ft-img{background:#2F6FDB}
+.fh{font-size:11px;font-weight:600;letter-spacing:.08em;color:#6B7280;text-transform:uppercase;margin:18px 0 8px}
+.fl{display:flex;align-items:center;gap:10px;min-height:32px;font-weight:500}
+.fl input{width:17px;height:17px;accent-color:#3A55D6}
+.fl span{margin-left:auto;font-size:12px;color:#5A6270}
+.in{width:100%;box-sizing:border-box;height:38px;border:1px solid #D9DDE3;border-radius:10px;padding:0 12px;font:inherit;color:#14171F;background:#FFFFFF}
+.snip{margin:0;padding:10px 12px;border-radius:10px;background:#F7F8FA;font-size:13.5px;color:#3F4652;display:flex;gap:10px;align-items:baseline}
+.pg{flex:none;font-size:11px;font-weight:700;color:#5A6270;background:#FFFFFF;border:1px solid #E4E7EC;border-radius:6px;padding:1px 6px}
+mark{background:#FFE89A;color:#14171F;border-radius:3px;padding:0 2px}
 </style>
 </helmet>
-<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
-  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
-    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
-    <a href="Expense.dc.html">Expenses</a>
-    <a href="Report.dc.html">Accounting reports</a>
-    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
-    <a href="Main.dc.html">Inbox</a>
-    <a href="Folder.dc.html">Folders</a>
-    <a class="on" href="Search.dc.html" aria-current="page">Search</a>
+<div style="display: flex; flex-wrap: wrap; min-height: 900px; width: 100%; max-width: 1280px; margin: 0 auto; background: #F4F5F7">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 232px; box-sizing: border-box; background: #FFFFFF; border-right: 1px solid #E4E7EC; padding: 18px 12px; display: flex; flex-direction: column; gap: 2px">
+    <div style="display: flex; align-items: center; gap: 10px; padding: 2px 10px 14px">
+      <div aria-hidden="true" style="width: 30px; height: 30px; border-radius: 9px; background: #14171F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif">O</div>
+      <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 17px">Officetul</span>
+    </div>
+    <a href="Expense.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18l2-1.5L9 21l2-1.5L13 21l2-1.5L17 21l2-1.5V3l-2 1.5L15 3l-2 1.5L11 3 9 4.5 7 3z"/><path d="M9 8h6M9 12h6"/></svg>Expenses</a>
+    <a href="Report.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M22 20H2"/></svg>Accounting reports</a>
+    <div class="nsec">Documents</div>
+    <a href="Main.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/></svg>Inbox<span class="count">5</span></a>
+    <a href="Folder.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Folders</a>
+    <a class="on" href="Search.dc.html" aria-current="page"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   </nav>
   <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
-    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
-      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
-      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Maria Lopez · Accounting</div>
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E4E7EC">
+      <div style="display: flex; align-items: center; gap: 10px; font-weight: 600">
+        <div aria-hidden="true" style="width: 28px; height: 28px; border-radius: 8px; background: #E9F3EE; color: #17663A; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700">DC</div>Dela Cruz Trading Corp.
+      </div>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 10px">
+        <div style="text-align: right; line-height: 1.25"><div style="font-weight: 600; font-size: 13px">Maria Lopez</div><div style="font-size: 12px; color: #5A6270">Accounting</div></div>
+        <div aria-hidden="true" style="width: 34px; height: 34px; border-radius: 50%; background: #F1EAFD; color: #5B2DB8; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">ML</div>
+      </div>
     </header>
-    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
-      <form role="search" style="display: flex; flex-wrap: wrap; gap: 10px">
-        <label for="q" style="position: absolute; left: -9999px">Search documents</label>
-        <input id="q" class="in" type="search" value="meralco march" style="flex: 1 1 360px; height: 46px; font-size: 16px">
-        <button class="btn btn-p" type="submit" style="height: 46px">Search</button>
+    <div style="padding: 26px 28px 32px; display: flex; flex-direction: column; gap: 20px">
+      <form role="search" class="card" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 10px 10px 10px 18px">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#5A6270" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label for="q" class="sr">Search documents</label>
+        <input id="q" type="search" value="meralco march" style="flex: 1 1 300px; min-width: 0; border: 0; font: inherit; font-size: 18px; font-weight: 500; color: #14171F; background: transparent; height: 44px">
+        <button class="btn btn-p" type="submit" style="height: 44px">Search</button>
       </form>
       <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
-        <aside aria-label="Filters" style="flex: 0 1 220px; background: #FFFFFF; border: 1px solid #E3E6EB; border-radius: 12px; padding: 6px 16px 16px">
+        <aside class="card" aria-label="Filters" style="flex: 0 1 236px; padding: 4px 18px 18px">
           <div class="fh">Document type</div>
-          <label class="fl"><input type="checkbox" checked> Invoice (purchase) · 2</label>
-          <label class="fl"><input type="checkbox" checked> Payment receipt · 1</label>
+          <label class="fl"><input type="checkbox" checked>Invoice (purchase)<span>2</span></label>
+          <label class="fl"><input type="checkbox" checked>Payment receipt<span>1</span></label>
           <div class="fh">Folder</div>
-          <label class="fl"><input type="checkbox" checked> Finance › Payables · 2</label>
-          <label class="fl"><input type="checkbox" checked> Finance › Receipts · 1</label>
+          <label class="fl"><input type="checkbox" checked>Finance / Payables<span>2</span></label>
+          <label class="fl"><input type="checkbox" checked>Finance / Receipts<span>1</span></label>
           <div class="fh">Document date</div>
-          <label class="fl" for="d1">From</label>
-          <input id="d1" class="in" value="1 Mar 2026">
-          <label class="fl" for="d2">To</label>
-          <input id="d2" class="in" value="30 Apr 2026">
-          <p style="margin: 14px 0 0; font-size: 12px; color: #4A5361">Counts only include documents you can open.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+            <div><label for="d1" class="sr">From</label><input id="d1" class="in" value="1 Mar 2026"></div>
+            <div><label for="d2" class="sr">To</label><input id="d2" class="in" value="30 Apr 2026"></div>
+          </div>
+          <p style="margin: 16px 0 0; font-size: 12px; color: #5A6270">Counts include only documents you can open.</p>
         </aside>
         <section aria-label="Results" style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-          <div style="font-size: 14px; color: #4A5361">3 results · Official versions · newest first</div>
-          <article class="res">
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Meralco bill — March 2026</a><span class="chip c-off">Official</span></div>
-            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables · 31 Mar 2026 · invoice for Expense #881</div>
-            <p style="margin: 0; font-size: 14px">Page 2: “…<mark>Meralco</mark> billing period <mark>March</mark> 2026, total amount due ₱8,452.30…”</p>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+            <h1 style="font-size: 18px">3 results</h1>
+            <span style="font-size: 13px; color: #5A6270">Official versions · newest first</span>
+          </div>
+          <article class="card" style="padding: 16px 18px; display: flex; gap: 14px">
+            <span class="ft ft-pdf" aria-hidden="true">PDF</span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600; color: #14171F">Meralco bill — March 2026</a><span class="st st-ok">Official</span></div>
+              <div style="font-size: 12.5px; color: #5A6270">Invoice (purchase) · Finance / Payables · 31 Mar 2026 · Expense #881</div>
+              <p class="snip"><span class="pg">p. 2</span><span>…<mark>Meralco</mark> billing period <mark>March</mark> 2026, total amount due ₱8,452.30…</span></p>
+            </div>
           </article>
-          <article class="res">
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Payment receipt — Meralco, paid 8 Apr 2026</a><span class="chip c-off">Official</span></div>
-            <div style="font-size: 13px; color: #4A5361">Payment receipt · Finance › Receipts · 8 Apr 2026 · phone photo</div>
-            <p style="margin: 0; font-size: 14px">Page 1: “…received from Dela Cruz Trading for <mark>Meralco</mark> account, <mark>March</mark> billing…”</p>
+          <article class="card" style="padding: 16px 18px; display: flex; gap: 14px">
+            <span class="ft ft-img" aria-hidden="true">JPG</span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600; color: #14171F">Meralco payment receipt — 8 Apr 2026</a><span class="st st-ok">Official</span></div>
+              <div style="font-size: 12.5px; color: #5A6270">Payment receipt · Finance / Receipts · phone photo · Expense #881</div>
+              <p class="snip"><span class="pg">p. 1</span><span>…received from Dela Cruz Trading for <mark>Meralco</mark> account, <mark>March</mark> billing…</span></p>
+            </div>
           </article>
-          <article class="res">
-            <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600">Meralco bill — February 2026</a><span class="chip c-off">Official</span></div>
-            <div style="font-size: 13px; color: #4A5361">Invoice (purchase) · Finance › Payables · 28 Feb 2026 · invoice for Expense #866</div>
-            <p style="margin: 0; font-size: 14px">Page 2: “…next reading date 2 <mark>March</mark> 2026 · <mark>Meralco</mark> customer service…”</p>
+          <article class="card" style="padding: 16px 18px; display: flex; gap: 14px">
+            <span class="ft ft-pdf" aria-hidden="true">PDF</span>
+            <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center"><a href="Document.dc.html" style="font-size: 16px; font-weight: 600; color: #14171F">Meralco bill — February 2026</a><span class="st st-ok">Official</span></div>
+              <div style="font-size: 12.5px; color: #5A6270">Invoice (purchase) · Finance / Payables · 28 Feb 2026 · Expense #866</div>
+              <p class="snip"><span class="pg">p. 2</span><span>…next meter reading 2 <mark>March</mark> 2026 · <mark>Meralco</mark> customer service…</span></p>
+            </div>
           </article>
-          <div style="font-size: 13px; color: #4A5361; border-top: 1px solid #E3E6EB; padding-top: 12px">Tip: search a TIN or invoice number with or without dashes, e.g. 123456789000.</div>
+          <div style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; background: #EEF1FD; color: #2A41B0; font-size: 13px">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+            <span>Search a TIN or invoice number with or without dashes, e.g. <span class="mono">123456789000</span></span>
+          </div>
         </section>
       </div>
     </div>
   </main>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":900}}'>
 class Component extends DCLogic {
   renderVals() {
     return {};

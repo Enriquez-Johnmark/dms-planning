@@ -9,117 +9,166 @@
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter,system-ui,sans-serif;color:#1F2328;background:#F6F7F9}
-a{color:#2457C5}a:hover{color:#1A3F94}
-.nav a{display:block;padding:9px 12px;border-radius:8px;color:#D9DFEA;text-decoration:none;font-size:14px}
-.nav a:hover{background:#2E3D61;color:#FFFFFF}
-.nav .on{background:#2E3D61;color:#FFFFFF;font-weight:600}
-.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
-.c-off{background:#E3F1E6;color:#1B6B32}
-.c-draft{background:#ECEEF2;color:#3D4552}
-.c-sup{background:#E8EEF9;color:#2B4C8C}
-.c-warn{background:#FDF0E1;color:#8A4B0B}
-.in{width:100%;box-sizing:border-box;height:40px;border:1px solid #CDD3DC;border-radius:8px;padding:0 12px;font:inherit;font-size:14px;color:#1F2328;background:#FFFFFF}
-.btn{height:40px;padding:0 16px;border-radius:8px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
-.btn-p{background:#2457C5;color:#FFFFFF;border:1px solid #2457C5}
-.btn-s{background:#FFFFFF;color:#1F2328;border:1px solid #CDD3DC}
-.card{background:#FFFFFF;border:1px solid #E3E6EB;border-radius:12px;padding:18px}
-.tbl{width:100%;border-collapse:collapse;font-size:14px}
-.tbl th{text-align:left;font-size:12px;color:#4A5361;font-weight:600;padding:8px 10px;border-bottom:1px solid #E3E6EB}
-.tbl td{padding:10px;border-bottom:1px solid #EEF0F3;vertical-align:top}
-.k{font-size:12px;color:#4A5361;font-weight:600}
-.v{font-size:14px;margin-top:3px}
+body{margin:0;background:#F4F5F7;color:#14171F;font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:#3A55D6;text-decoration:none}a:hover{color:#2A41B0;text-decoration:underline}
+h1,h2,h3{font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;letter-spacing:-0.01em;margin:0}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nav a{display:flex;align-items:center;gap:10px;height:38px;padding:0 10px;border-radius:8px;color:#3F4652;font-weight:500;text-decoration:none}
+.nav a:hover{background:#F0F2F5;color:#14171F;text-decoration:none}
+.nav a.on{background:#EEF1FD;color:#2A41B0;font-weight:600}
+.nsec{font-size:11px;font-weight:600;letter-spacing:.08em;color:#6B7280;text-transform:uppercase;padding:18px 10px 6px}
+.count{margin-left:auto;background:#3A55D6;color:#FFFFFF;font-size:11.5px;font-weight:600;border-radius:999px;padding:1px 8px}
+.card{background:#FFFFFF;border:1px solid #E4E7EC;border-radius:14px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn-p{background:#3A55D6;color:#FFFFFF;box-shadow:0 1px 2px rgba(58,85,214,.25)}
+.btn-s{background:#FFFFFF;color:#14171F;border-color:#D9DDE3}
+.st{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.st::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}
+.st-ok{background:#E7F5EC;color:#17663A}
+.st-sup{background:#EAF0FB;color:#2D4C8F}
+.st-warn{background:#FFF3E3;color:#8F4706}
+.st-gray{background:#F0F1F4;color:#4A505C}
+.tag{display:inline-flex;align-items:center;height:24px;padding:0 10px;border-radius:6px;font-size:12px;font-weight:600;background:#F0F2F5;color:#3F4652}
+.ft{position:relative;flex:none;width:42px;height:52px;border-radius:8px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:7px;box-sizing:border-box;font-size:10.5px;font-weight:700;letter-spacing:.04em;color:#FFFFFF}
+.ft::after{content:'';position:absolute;top:0;right:0;width:12px;height:12px;background:rgba(255,255,255,.4);border-bottom-left-radius:5px}
+.ft-pdf{background:#B93A1E}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:16px 18px 0}
+.k{font-size:12px;font-weight:600;color:#5A6270}
+.v{margin-top:4px;font-weight:500}
+.ver{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px}
+.dot{width:14px;height:14px;border-radius:50%;margin:3px auto 0;box-sizing:border-box}
+.line{width:2px;background:#E4E7EC;margin:4px auto 0;flex:1}
 </style>
 </helmet>
-<div style="display: flex; flex-wrap: wrap; min-height: 820px; width: 100%; max-width: 1280px; margin: 0 auto">
-  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 220px; box-sizing: border-box; background: #1E2A44; padding: 20px 12px; display: flex; flex-direction: column; gap: 4px">
-    <div style="color: #FFFFFF; font-weight: 700; font-size: 18px; padding: 4px 12px 16px">Officetul</div>
-    <a href="Expense.dc.html">Expenses</a>
-    <a href="Report.dc.html">Accounting reports</a>
-    <div style="color: #9AA6BD; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; padding: 16px 12px 6px">DOCUMENTS</div>
-    <a href="Main.dc.html">Inbox</a>
-    <a class="on" href="Folder.dc.html">Folders</a>
-    <a href="Search.dc.html">Search</a>
+<div style="display: flex; flex-wrap: wrap; min-height: 900px; width: 100%; max-width: 1280px; margin: 0 auto; background: #F4F5F7">
+  <nav class="nav" aria-label="Officetul apps" style="flex: 0 1 232px; box-sizing: border-box; background: #FFFFFF; border-right: 1px solid #E4E7EC; padding: 18px 12px; display: flex; flex-direction: column; gap: 2px">
+    <div style="display: flex; align-items: center; gap: 10px; padding: 2px 10px 14px">
+      <div aria-hidden="true" style="width: 30px; height: 30px; border-radius: 9px; background: #14171F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif">O</div>
+      <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 17px">Officetul</span>
+    </div>
+    <a href="Expense.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v18l2-1.5L9 21l2-1.5L13 21l2-1.5L17 21l2-1.5V3l-2 1.5L15 3l-2 1.5L11 3 9 4.5 7 3z"/><path d="M9 8h6M9 12h6"/></svg>Expenses</a>
+    <a href="Report.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V5M16 20v-6M22 20H2"/></svg>Accounting reports</a>
+    <div class="nsec">Documents</div>
+    <a href="Main.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1z"/></svg>Inbox<span class="count">5</span></a>
+    <a class="on" href="Folder.dc.html" aria-current="page"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Folders</a>
+    <a href="Search.dc.html"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   </nav>
   <main style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column">
-    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 28px; background: #FFFFFF; border-bottom: 1px solid #E3E6EB">
-      <div style="font-weight: 600; font-size: 14px">Dela Cruz Trading Corp.</div>
-      <label for="g-search" style="position: absolute; left: -9999px">Search documents</label>
-      <input id="g-search" class="in" type="search" placeholder="Search documents, TINs, invoice numbers…" style="flex: 1 1 280px; max-width: 520px">
-      <div style="margin-left: auto; font-size: 14px; color: #4A5361">Carla Mendoza · Admin</div>
+    <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 12px 28px; background: #FFFFFF; border-bottom: 1px solid #E4E7EC">
+      <div style="display: flex; align-items: center; gap: 10px; font-weight: 600">
+        <div aria-hidden="true" style="width: 28px; height: 28px; border-radius: 8px; background: #E9F3EE; color: #17663A; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700">DC</div>Dela Cruz Trading Corp.
+      </div>
+      <form role="search" style="flex: 1 1 280px; max-width: 560px; display: flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border: 1px solid #E4E7EC; border-radius: 10px; background: #F7F8FA; color: #6B7280">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label for="g-search" class="sr">Search documents</label>
+        <input id="g-search" type="search" placeholder="Search documents, TINs, invoice numbers…" style="border: 0; background: transparent; font: inherit; flex: 1; min-width: 0; color: #14171F">
+      </form>
+      <div style="margin-left: auto; display: flex; align-items: center; gap: 10px">
+        <div style="text-align: right; line-height: 1.25"><div style="font-weight: 600; font-size: 13px">Carla Mendoza</div><div style="font-size: 12px; color: #5A6270">Admin · Manage on Leases</div></div>
+        <div aria-hidden="true" style="width: 34px; height: 34px; border-radius: 50%; background: #FDEEE3; color: #8F4706; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700">CM</div>
+      </div>
     </header>
-    <div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 18px">
-      <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 12px">
-        <div style="flex: 1 1 360px">
-          <div style="font-size: 13px; color: #4A5361"><a href="Folder.dc.html">Admin</a> › <a href="Folder.dc.html">Leases</a></div>
-          <h1 style="margin: 6px 0 8px; font-size: 24px">Lease — ABC Realty, Unit 3B</h1>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: #4A5361">
-            <span>Contract</span><span aria-hidden="true">·</span><span>Official: v2 “Signed”</span><span aria-hidden="true">·</span><span class="chip c-warn">Expires 30 Jun 2027</span>
+    <div style="padding: 22px 28px 32px; display: flex; flex-direction: column; gap: 20px">
+      <div style="font-size: 13px; color: #5A6270; display: flex; align-items: center; gap: 6px"><a href="Folder.dc.html">Admin</a><span aria-hidden="true">/</span><a href="Folder.dc.html">Leases</a></div>
+      <section class="card" aria-label="Document summary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 18px 20px">
+        <span class="ft ft-pdf" aria-hidden="true">PDF</span>
+        <div style="flex: 1 1 320px; min-width: 0">
+          <h1 style="font-size: 24px">Lease — ABC Realty, Unit 3B</h1>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px">
+            <span class="tag">Contract</span>
+            <span class="st st-ok">Official: v2 “Signed”</span>
+            <span class="st st-warn">Expires 30 Jun 2027</span>
           </div>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px">
-          <button class="btn btn-s" type="button">Download original</button>
+          <button class="btn btn-s" type="button"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>Download original</button>
           <button class="btn btn-s" type="button">Upload new version</button>
           <button class="btn btn-p" type="button">Mark v3 official</button>
         </div>
-      </div>
+      </section>
       <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
         <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-          <section class="card" aria-label="Versions">
-            <h2 style="margin: 0 0 10px; font-size: 16px">Versions</h2>
-            <div style="overflow-x: auto">
-            <table class="tbl">
-              <thead><tr><th scope="col">Version</th><th scope="col">Status</th><th scope="col">Label</th><th scope="col">Added</th><th scope="col">Note</th></tr></thead>
-              <tbody>
-                <tr><td>v3</td><td><span class="chip c-draft">Draft</span></td><td>Rev C</td><td>Ana Reyes · 18 Oct 2026</td><td>Rent changed to ₱85,000 · based on v2</td></tr>
-                <tr><td>v2</td><td><span class="chip c-off">Official</span></td><td>Signed</td><td>Carla Mendoza · 2 Jul 2025</td><td>“Signed copy received”</td></tr>
-                <tr><td>v1</td><td><span class="chip c-sup">Superseded</span></td><td>For signature</td><td>Ana Reyes · 20 Jun 2025</td><td>—</td></tr>
-              </tbody>
-            </table>
-            </div>
+          <section class="card" aria-label="Versions" style="padding-bottom: 6px">
+            <div class="ch"><h2 style="font-size: 15px">Versions</h2><span style="font-size: 12px; color: #5A6270">Only one version can be Official</span></div>
+            <ol style="list-style: none; margin: 14px 0 0; padding: 0 18px">
+              <li class="ver">
+                <div style="display: flex; flex-direction: column"><div class="dot" style="border: 2px solid #8B93A1; background: #FFFFFF"></div><div class="line"></div></div>
+                <div style="padding-bottom: 16px">
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><strong>v3 · Rev C</strong><span class="st st-gray">Draft</span><span style="font-size: 12px; color: #5A6270">based on v2</span></div>
+                  <div style="font-size: 13px; color: #3F4652; margin-top: 3px">Ana Reyes · 18 Oct 2026 · rent changed to ₱85,000</div>
+                </div>
+              </li>
+              <li class="ver">
+                <div style="display: flex; flex-direction: column"><div class="dot" style="background: #1E8A4C; box-shadow: 0 0 0 4px #E7F5EC"></div><div class="line"></div></div>
+                <div style="padding-bottom: 16px">
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><strong>v2 · Signed</strong><span class="st st-ok">Official</span></div>
+                  <div style="font-size: 13px; color: #3F4652; margin-top: 3px">Marked official by Carla Mendoza · 2 Jul 2025 · “Signed copy received”</div>
+                </div>
+              </li>
+              <li class="ver">
+                <div style="display: flex; flex-direction: column"><div class="dot" style="background: #9FB2DB"></div></div>
+                <div style="padding-bottom: 14px">
+                  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><strong>v1 · For signature</strong><span class="st st-sup">Superseded</span></div>
+                  <div style="font-size: 13px; color: #3F4652; margin-top: 3px">Ana Reyes · 20 Jun 2025</div>
+                </div>
+              </li>
+            </ol>
           </section>
-          <section class="card" aria-label="Details" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
-            <h2 style="grid-column: 1 / -1; margin: 0; font-size: 16px">Details</h2>
-            <div><div class="k">Counterparty</div><div class="v">ABC Realty Inc.</div></div>
-            <div><div class="k">Signed on</div><div class="v">1 Jul 2025</div></div>
-            <div><div class="k">Expiry date</div><div class="v">30 Jun 2027</div></div>
-            <div><div class="k">Monthly rent</div><div class="v">₱80,000.00</div></div>
-            <div><div class="k">Sensitivity</div><div class="v">Internal</div></div>
-            <div><div class="k">Paper original</div><div class="v">Kept · Admin cabinet 1 · custodian Carla Mendoza</div></div>
+          <section class="card" aria-label="Details" style="padding: 16px 18px 18px">
+            <h2 style="font-size: 15px">Details</h2>
+            <dl style="margin: 14px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 16px 20px">
+              <div><dt class="k">Counterparty</dt><dd class="v" style="margin-left: 0">ABC Realty Inc.</dd></div>
+              <div><dt class="k">Signed on</dt><dd class="v" style="margin-left: 0">1 Jul 2025</dd></div>
+              <div><dt class="k">Expiry date</dt><dd class="v" style="margin-left: 0">30 Jun 2027</dd></div>
+              <div><dt class="k">Monthly rent</dt><dd class="v" style="margin-left: 0">₱80,000.00</dd></div>
+              <div><dt class="k">Sensitivity</dt><dd class="v" style="margin-left: 0">Internal</dd></div>
+              <div><dt class="k">Paper original</dt><dd class="v" style="margin-left: 0">Admin cabinet 1 · Carla Mendoza</dd></div>
+            </dl>
           </section>
-          <section class="card" aria-label="Links">
-            <h2 style="margin: 0 0 10px; font-size: 16px">Linked Officetul records</h2>
-            <ul style="margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 6px">
-              <li>lease for <a href="Expense.dc.html">Project “Makati branch office”</a></li>
-              <li>contract of <a href="Expense.dc.html">Supplier “ABC Realty Inc.”</a></li>
+          <section class="card" aria-label="Linked records" style="padding: 16px 18px 18px">
+            <h2 style="font-size: 15px">Linked Officetul records</h2>
+            <ul style="list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px">
+              <li style="display: flex; align-items: center; gap: 8px; border: 1px solid #E4E7EC; border-radius: 10px; padding: 8px 12px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#5A6270" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span style="color: #5A6270">lease for</span><a href="Expense.dc.html">Project “Makati branch office”</a></li>
+              <li style="display: flex; align-items: center; gap: 8px; border: 1px solid #E4E7EC; border-radius: 10px; padding: 8px 12px"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#5A6270" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span style="color: #5A6270">contract of</span><a href="Expense.dc.html">Supplier “ABC Realty Inc.”</a></li>
             </ul>
           </section>
         </div>
-        <aside style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-          <section class="card" aria-label="Preview">
-            <h2 style="margin: 0 0 10px; font-size: 16px">Preview · v2</h2>
-            <div role="img" aria-label="Page 1 preview of the signed lease" style="height: 180px; border: 1px solid #CDD3DC; border-radius: 6px; background: #FAFBFC; padding: 14px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
-              <div style="height: 10px; width: 60%; background: #D5DAE2; border-radius: 3px"></div>
-              <div style="height: 8px; width: 92%; background: #E3E6EB; border-radius: 3px"></div>
-              <div style="height: 8px; width: 88%; background: #E3E6EB; border-radius: 3px"></div>
-              <div style="height: 8px; width: 75%; background: #E3E6EB; border-radius: 3px"></div>
-              <div style="margin-top: auto; font-size: 11px; color: #4A5361; text-align: center">Page 1 of 9</div>
+        <aside style="flex: 1 1 290px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <section class="card" aria-label="Preview" style="padding: 16px 18px 18px">
+            <div style="display: flex; justify-content: space-between; align-items: center"><h2 style="font-size: 15px">Preview</h2><span style="font-size: 12px; color: #5A6270">v2 · page 1 of 9</span></div>
+            <div role="img" aria-label="Page 1 preview of the signed lease" style="margin-top: 12px; aspect-ratio: 4 / 3; border-radius: 10px; background: #F4F5F7; display: flex; align-items: center; justify-content: center">
+              <div style="width: 52%; aspect-ratio: 3 / 4; background: #FFFFFF; border-radius: 4px; box-shadow: 0 6px 18px rgba(16,24,40,.12); padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; gap: 5px">
+                <div style="height: 7px; width: 60%; background: #14171F; border-radius: 2px; align-self: center"></div>
+                <div style="height: 4px; width: 92%; background: #E4E7EC; border-radius: 2px; margin-top: 6px"></div>
+                <div style="height: 4px; width: 88%; background: #E4E7EC; border-radius: 2px"></div>
+                <div style="height: 4px; width: 90%; background: #E4E7EC; border-radius: 2px"></div>
+                <div style="height: 4px; width: 70%; background: #E4E7EC; border-radius: 2px"></div>
+                <div style="margin-top: auto; display: flex; justify-content: space-between"><div style="height: 4px; width: 36%; background: #8B93A1; border-radius: 2px"></div><div style="height: 4px; width: 36%; background: #8B93A1; border-radius: 2px"></div></div>
+              </div>
             </div>
-            <p style="margin: 10px 0 0; font-size: 13px; color: #4A5361">Integrity last verified 14 Oct 2026 · fingerprint matches</p>
           </section>
-          <section class="card" aria-label="Why can I see this">
-            <h2 style="margin: 0 0 8px; font-size: 16px">Why can I see this?</h2>
-            <p style="margin: 0; font-size: 14px">Folder <strong>Admin › Leases</strong> gives the <strong>Admin</strong> role <strong>Manage</strong>.</p>
+          <section class="card" aria-label="Integrity" style="padding: 16px 18px; display: flex; gap: 12px">
+            <div aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #E7F5EC; color: #17663A; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <div style="min-width: 0">
+              <div style="font-weight: 600">File unchanged since upload</div>
+              <div style="font-size: 12.5px; color: #5A6270; margin-top: 2px">Fingerprint last checked 14 Oct 2026</div>
+              <div class="mono" style="margin-top: 6px; color: #3F4652">SHA-256 a3f9…7c21</div>
+            </div>
+          </section>
+          <section class="card" aria-label="Why can I see this" style="padding: 16px 18px">
+            <h2 style="font-size: 15px">Why can I see this?</h2>
+            <p style="margin: 8px 0 0">The folder <strong>Admin › Leases</strong> gives the <strong>Admin</strong> role <strong>Manage</strong>.</p>
             <p style="margin: 10px 0 0; font-size: 13px"><a href="Folder.dc.html">Who can see this document?</a></p>
           </section>
-          <section class="card" aria-label="History">
-            <h2 style="margin: 0 0 10px; font-size: 16px">History</h2>
-            <ul style="margin: 0; padding: 0; list-style: none; font-size: 13px; display: flex; flex-direction: column; gap: 8px">
-              <li><strong>Ana Reyes</strong> uploaded v3 as Draft · 18 Oct 2026</li>
-              <li><strong>Ben Cruz</strong> viewed v2 · 12 Oct 2026</li>
-              <li><strong>Carla Mendoza</strong> marked v2 Official: “Signed copy received” · 2 Jul 2025</li>
+          <section class="card" aria-label="Activity" style="padding: 16px 18px">
+            <h2 style="font-size: 15px">Activity</h2>
+            <ul style="list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13px">
+              <li><strong>Ana Reyes</strong> added v3 as Draft<div style="color: #5A6270; font-size: 12px">18 Oct 2026, 15:12</div></li>
+              <li><strong>Ben Cruz</strong> viewed v2<div style="color: #5A6270; font-size: 12px">12 Oct 2026, 09:40</div></li>
+              <li><strong>Carla Mendoza</strong> marked v2 Official<div style="color: #5A6270; font-size: 12px">2 Jul 2025, 11:05</div></li>
             </ul>
           </section>
         </aside>
@@ -128,7 +177,7 @@ a{color:#2457C5}a:hover{color:#1A3F94}
   </main>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":820}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":900}}'>
 class Component extends DCLogic {
   renderVals() {
     return {};

@@ -52,7 +52,7 @@ What D-011 means for the Documents app's design (detail in Sections 08, 09 and 1
 | 27001 area (clause or control title) | Documents-app support |
 |---|---|
 | 7.5 Documented information | Version history, the official-version marker, approvals (next release), access control on the company's own policies |
-| A.5.12 / A.5.13 Classification and labelling | Sensitivity field per document (D-026) |
+| A.5.12 / A.5.13 Classification and labelling | Sensitivity label per document (catalogue; D-098: a label, not access control) |
 | A.5.15 / A.5.18 / A.8.3 Access control, access rights, information access restriction | Folder permissions, opt-in link visibility (D-020), access reviews |
 | A.5.33 Protection of records | Original file plus hash (D-026), retention and legal hold (next release) |
 | A.5.34 Privacy and protection of PII | SPI flag and defaults (D-024) |

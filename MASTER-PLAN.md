@@ -45,7 +45,7 @@ Inspected 2026-10-18 (mattpocock-skills plugin v1.3.1, installed via AI Hero).
 | 8 | Security, audit, isolation | Sections 09, 12 | Critical controls and audit objectives agreed | **Owner agreed (D-052 to D-063)** |
 | 9 | Database, search, storage, ERP | Sections 13, 16 | Data and integration decisions approved | **Owner agreed (D-064 to D-075); code review pending (D-013)** |
 | 10 | Infrastructure, cost, backup, DR | Sections 14, 15, 18 | Operating model is financially and operationally realistic | **Owner agreed (D-076 to D-088); pricing with the senior partner** |
-| 11 | MVP scope | Section 17 | Partner approves scope and release boundaries | Not started |
+| 11 | MVP scope | Section 17 | Partner approves scope and release boundaries | **Owner agreed (D-089 to D-098); senior partner approval pending** |
 | 12 | Architecture and roadmap | Sections 19–21, ADRs | Requirements and architecture mature enough to plan implementation | Not started |
 | 13 | Implementation handoff | Spec, tickets, test plan, coding prompt | All prior gates closed or explicitly waived | Not started |
 

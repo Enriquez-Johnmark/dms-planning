@@ -10,7 +10,7 @@ Each preset is configuration data that clients can extend. It is not a separate 
 |---|---|
 | Title, document date, document type | Basic findability |
 | Linked Officetul records (many-to-many, labelled) | D-019 |
-| Sensitivity: Public / Internal / Confidential / **SPI** (preset default per type) | Data Privacy Act; drives default folder access |
+| Sensitivity: Public / Internal / Confidential / **SPI** (preset default per type) | Data Privacy Act; suggests a default Folder when filing, never grants or removes access (D-098) |
 | **Paper original kept? Where? Custodian** | D-008: never advise destroying originals. Several rules require paper originals (R08 §3.5). |
 | Expiry / valid-until date (types that expire) | Captured now; reminders in the next release |
 | Event date (e.g. completion, matter closed, fiscal year end) | Future retention rules count from events, not upload dates (R08 §3.7) |

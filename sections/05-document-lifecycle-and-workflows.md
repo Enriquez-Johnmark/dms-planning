@@ -108,7 +108,7 @@ Access levels confirmed by D-053 (Phase 8, [Section 12 Part B](12-security-and-a
 | Action | View | Contribute | Manage | Company admin |
 |---|---|---|---|---|
 | See document and official version | ✓ | ✓ | ✓ | ✓ |
-| See drafts and history | — (configurable) | ✓ | ✓ | ✓ |
+| See drafts and history | — | ✓ | ✓ | ✓ |
 | File from Inbox, upload new versions (as Draft) | — | ✓ | ✓ | ✓ |
 | **Mark official, withdraw, restore** | — | — | ✓ | ✓ |
 | Delete to Trash / restore from Trash | — | Own drafts only | ✓ | ✓ |

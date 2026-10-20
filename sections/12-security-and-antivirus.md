@@ -56,7 +56,7 @@ Clients email and upload files from anywhere. A single malicious file that reach
 |---|---|
 | Scanner down | Files stay in quarantine; retry; alert ops at 15 min; **never auto-release** |
 | Scan timeout | Retry up to 3 times, then held for review by our ops; the company sees "security check pending" |
-| Infected | Blocked, never shown; uploader and company admins notified; locked 30 days for appeal, then deleted; fingerprint and verdict kept in the log |
+| Infected | Blocked, never shown; uploader and company admins notified; held in quarantine (not Object Lock) 30 days for appeal, then deleted; fingerprint and verdict kept in the log |
 | False positive claimed | Our ops review; release with a per-fingerprint exception and a log entry |
 | Password-protected file (can't be scanned inside) | Held; a **company admin can accept the risk** (logged); stored with an "Encrypted" badge; no preview |
 | Corrupt or unreadable | Rejected with a reason shown to the uploader; not filed |

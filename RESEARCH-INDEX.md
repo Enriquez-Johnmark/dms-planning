@@ -23,6 +23,7 @@ Raw research notes live in [`research/`](research/). Each note cites its own sou
 | R17 | [Data model and ERP integration](research/R17-data-model-and-erp-integration.md) | Tables, keys, Links to Officetul records, app contract, storage layout, MySQL vs PostgreSQL | Done 2026-10-20 | Sections 13, 16 |
 | R18 | [Hosting and cost model](research/R18-hosting-and-cost-model.md) | Where to host, monthly cost per tier and per company, pricing implications, ops model | Done 2026-10-20 | Sections 14, 18 |
 | R19 | [Backup, retention and disaster recovery](research/R19-backup-retention-and-disaster-recovery.md) | Recovery targets, backups, exit deletion, restore testing, disaster scenarios | Done 2026-10-20 | Section 15 |
+| R20 | [MVP scope synthesis](research/R20-mvp-scope-synthesis.md) | MVP feature inventory from D-001–D-088, conflicts, effort vs timeline, release gates | Done 2026-10-21 | Section 17 |
 
 ## Not yet researched (planned)
 

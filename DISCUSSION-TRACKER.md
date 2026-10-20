@@ -48,6 +48,7 @@ Status of each section. A section closes only after owner/partner review, never 
 | 13 | 2026-10-21 | Hosting, processing server, MySQL upgrade, recovery targets, backup location, backup retention, recovering deletions, exit, purge ledger and restore marker, restore tests, plan limits, ops budget, cost model to senior partner | Q1–Q13 | Answered ("go ahead please" to all recommendations): D-076 to D-088 |
 | 14 | 2026-10-21 | Timeline and team, Should list, production pilot, Inbox visibility, folders-only access, scan-to-email, first-client support, Officetul platform work, usage meters, housekeeping | Q1–Q10 | Answered ("go ahead please" to all recommendations): D-089 to D-098 |
 | 15 | 2026-10-21 | Pipeline workers, purge ledger storage, purge DB user, Security log copy, download CDN, build order, long-lead tasks, risk ownership, risk statuses, first-client criteria, second-client gate, housekeeping | Q1–Q12 | Answered ("go ahead please" to all recommendations): D-099 to D-110 |
+| 16 | 2026-10-21 | Screen sketches: navigation, filing beside the list, attach from a record, sketches decide content not style | Q1–Q4 | Answered ("go ahead please" to all recommendations): D-111 to D-114 |
 
 ## Change log for sequence
 

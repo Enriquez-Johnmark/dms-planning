@@ -14,4 +14,6 @@ Low-detail sketches of the six main Officetul Documents screens, made on 2026-10
 | 5 | Documents panel on Expense #881 | `Expense.dc.html` | Linked invoice (Official), a just-attached receipt being checked, attach area | D-019, D-075, D-098h |
 | 6 | Expenses without an invoice or receipt | `Report.dc.html` | Expenses missing support, with the reason (no document, Draft, Withdrawn) | D-023, D-056, D-072 |
 
+**Agreed in Round 16 (D-111 to D-114):** Documents is its own menu section (Inbox with a count, Folders, Search); filing happens in a panel beside the Inbox list; a file attached on a record page is checked and filed directly, without the Inbox; the sketches fix content, and the final look follows Officetul's style.
+
 **Not shown (by decision):** link-granted access (D-093), scan-to-email (D-094), staff support access (D-095), "Include history" and "Search Trash" (D-090).

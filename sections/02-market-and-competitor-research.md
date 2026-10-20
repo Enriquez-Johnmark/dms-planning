@@ -16,6 +16,7 @@ Re-scoped on 2026-10-18 from "should we build at all?" because D-002 and D-010 s
 - **Odoo, the closest model to Officetul, locks Documents to its paid Enterprise edition** (US$11.20 per user per month), and folder automations need the more expensive Custom plan. OCR is charged per document. *(Verified fact, R05 §1)*
 - **No ERP reviewed has an "official version" marker, retention rules or legal hold,** and most don't search the text inside files in the core product. These are open ground for Officetul. *(Verified fact for the products and pages checked, R05 §6)*
 - **The underlying costs are tiny.** Self-hosted OCR, storage and inbound email for a typical tenant come to **about ₱48 per month** including VAT, or about ₱257 with cloud OCR. *(Estimate; R06 §4, assuming 20 GB stored, 2,000 pages and 300 emails per month)*
+  - **Update 2026-10-21:** this counted only variable costs. Including the fixed processing server and ops time, one company costs about **₱900–1,270 a month** at year-1 scale. See [Section 18](18-cost-estimates-and-operating-model.md).
 - **Peso price anchors** *(Verified fact or Estimate, R06 §7)*:
   - Juan accounting: ₱2,000/month per organisation.
   - Receipt-capture add-ons: roughly ₱500–1,600/month.

@@ -21,10 +21,11 @@ Raw research notes live in [`research/`](research/). Each note cites its own sou
 | R15 | [Tenant isolation and permissions](research/R15-tenant-isolation-and-permissions.md) | Keeping companies separate, folder permissions, permission-aware search, support access, MFA | Done 2026-10-20 | Sections 09, 12 |
 | R16 | [Search architecture](research/R16-search-architecture.md) | Which search engine and design for details and OCR text, with exact access filtering | Done 2026-10-20 | Section 13 |
 | R17 | [Data model and ERP integration](research/R17-data-model-and-erp-integration.md) | Tables, keys, Links to Officetul records, app contract, storage layout, MySQL vs PostgreSQL | Done 2026-10-20 | Sections 13, 16 |
+| R18 | [Hosting and cost model](research/R18-hosting-and-cost-model.md) | Where to host, monthly cost per tier and per company, pricing implications, ops model | Done 2026-10-20 | Sections 14, 18 |
+| R19 | [Backup, retention and disaster recovery](research/R19-backup-retention-and-disaster-recovery.md) | Recovery targets, backups, exit deletion, restore testing, disaster scenarios | Done 2026-10-20 | Section 15 |
 
 ## Not yet researched (planned)
 
 - Philippine legal research in depth: e-Commerce Act, Rules on Electronic Evidence, notarial rules, certified true copies (Phase 5)
 - Industry workflow mapping per segment (Phase 3, mostly from interviews)
 - OCR tool benchmark design, including Filipino-language support (Phase 7)
-- Hosting prices in the Philippines and region (Phase 10)

@@ -14,7 +14,7 @@ Price and pitch decide whether Documents helps sell Officetul or becomes a hard 
 
 - **Competitors include documents for free.** Xero, QuickBooks and Zoho don't charge extra for storing and attaching receipts. They only charge extra for **AI that reads a receipt and fills in the amount for you**.
 - **Odoo, the ERP most like Officetul, charges for it.** Its Documents app is only in the paid edition, about ₱650 per user per month, and its OCR is charged per document.
-- **Our running cost is small.** Storing and searching a typical client's documents costs us roughly ₱50–260 a month.
+- **Our running cost is small.** Storing and searching a typical client's documents costs us roughly ₱50–260 a month. *(Superseded 2026-10-21: with the fixed server and our time it is about ₱900–1,270 per company; see [meeting guide 18](18-costs-and-pricing.md).)*
 - **Nobody offers these:** searching inside every scan with no per-page fee, an "official version" marker, or Philippine-ready document types such as BIR 2307 and Official Receipt. **That's our pitch.**
 
 > **Update 2026-10-18:** the project owner deferred the pricing decision until the server and operating cost estimate is ready (D-018). For now, use this meeting to gather Q2 (how Officetul is priced today) and the senior partner's first reaction to Q1 and Q3. Don't decide.

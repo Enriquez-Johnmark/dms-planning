@@ -179,6 +179,24 @@ _Why this matters: the "Expenses without an invoice or receipt" report (D-023, D
 
 >
 
+## Operations (added after Phase 10)
+
+### 31. Is Officetul's infrastructure described in code (Terraform, CDK, Forge or similar), or set up by hand?
+
+_Why this matters: rebuilding in another region within 2 business days (D-079) needs it._
+
+>
+
+### 32. Are `APP_KEY` and other secrets backed up somewhere outside the servers? Who can get to them?
+
+_Why this matters: a lost `APP_KEY` makes encrypted data unreadable even after a perfect database restore._
+
+>
+
+### 33. Is Officetul hosted in one cloud account or several? Who holds the root/owner login, is it protected by MFA, and is it on a company email address?
+
+>
+
 ## Anything else?
 
 Anything about Officetul that a new module should know about, or must not break?

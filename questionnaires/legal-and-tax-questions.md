@@ -106,6 +106,38 @@ Please mark each answer **confirmed**, **likely** or **unsure**. Short answers a
 
 >
 
+### A23. At contract exit we delete live data within 7 days after a 30-day export window, but locked backup copies can only expire on schedule (up to 120 days), kept "beyond use" meanwhile. Is that acceptable under IRR s.44 ("including existing copies")?
+
+>
+
+### A24. May we restore a client's permanently deleted data from backup at the request of one company admin? Who at the client may authorise it, and must it be in writing?
+
+>
+
+### A25. If a restore brings back data the client had erased for a data subject, is re-applying the deletion before anyone can see it enough? Must anything be reported?
+
+>
+
+### A26. Does naming a second region (e.g. Tokyo) for backups and disaster recovery in the data processing addendum need more than listing it (NPC accountability for cross-border transfers)? (Joins A12.)
+
+>
+
+### A27. Is a deletion certificate issued before backups expire, stating the date they expire, acceptable proof of deletion?
+
+>
+
+### A28. Is a quarterly restore test "periodic testing" enough under NPC Circular 2023-06 s.21?
+
+>
+
+### A29. Does data lost in a restore (e.g. 5 minutes of uploads) count as a personal data breach that the client must report within 72 hours, even with no leak?
+
+>
+
+### A30. Does a documented gap in the activity log after a restore weaken its weight under the Rules on Electronic Evidence, Rule 7?
+
+>
+
 ## B. Tax adviser
 
 ### B1. Can scanned images replace paper **purchase invoices** and **BIR 2307s** for the 5-year retention period, or must the paper be kept? (RR 7-2024; RR 2-2015 mentions hard copies of withholding certificates.)
@@ -125,6 +157,10 @@ Please mark each answer **confirmed**, **likely** or **unsure**. Short answers a
 >
 
 ### B5. Is "helps organise records you must keep for the BIR" a safe description? Anything we should never say?
+
+>
+
+### B6. Is the 12% VAT on foreign cloud services (e.g. AWS, Linode bills) creditable input VAT for the company that sells Officetul?
 
 >
 

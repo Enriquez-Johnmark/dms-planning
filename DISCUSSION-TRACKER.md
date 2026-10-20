@@ -20,11 +20,11 @@ Status of each section. A section closes only after owner/partner review, never 
 | 11 | Philippine legal and regulatory research | 5 | Owner agreed; lawyer and tax review pending | [11](sections/11-philippine-legal-and-regulatory-research.md) | [10–11](meeting-guides/10-11-legal-authenticity-and-privacy.md) | 2026-10-19 | Section 03 |
 | 12 | Security and antivirus | 7–8 | Owner agreed (file pipeline; access and isolation) | [12](sections/12-security-and-antivirus.md) | — | 2026-10-20 | Grilling Rounds 9, 11 |
 | 13 | Database and search architecture | 9 | Owner agreed; code review pending (D-013) | [13](sections/13-database-and-search-architecture.md) | — | 2026-10-20 | Grilling Round 12 |
-| 14 | Storage and server requirements | 10 | Not started | — | — | — | Section 13 |
-| 15 | Backup, retention, DR | 10 | Not started | — | — | — | Sections 11, 14 |
+| 14 | Storage and server requirements | 10 | Owner agreed; Officetul hosting (Q12) pending | [14](sections/14-storage-and-server-requirements.md) | — | 2026-10-21 | Grilling Round 13 |
+| 15 | Backup, retention, DR | 10 | Owner agreed; lawyer A23–A30 pending | [15](sections/15-backup-retention-and-disaster-recovery.md) | — | 2026-10-21 | Grilling Round 13 |
 | 16 | ERP integration and data model | 9 | Owner agreed; code review pending (D-013) | [16](sections/16-erp-integration-and-data-model.md) | — | 2026-10-20 | Grilling Round 12 |
 | 17 | MVP scope and prioritisation | 11 | Not started | — | — | — | Sections 01–16 |
-| 18 | Cost estimates and operating model | 10 | Not started | — | — | — | Section 14 |
+| 18 | Cost estimates and operating model | 10 | Owner agreed; **pricing awaits senior partner** | [18](sections/18-cost-estimates-and-operating-model.md) | [18](meeting-guides/18-costs-and-pricing.md) | 2026-10-21 | Senior partner pricing meeting |
 | 19 | Risk register | all | Not started | — | — | — | Living document, started in Phase 1 |
 | 20 | Architecture proposal | 12 | Not started | — | — | — | Section 17 |
 | 21 | Implementation roadmap | 12–13 | Not started | — | — | — | Section 20 |
@@ -45,6 +45,7 @@ Status of each section. A section closes only after owner/partner review, never 
 | 10 | 2026-10-20 | Repository housekeeping: move files to the root, commit plan, public repository | — | Done; no product decisions |
 | 11 | 2026-10-20 | Company isolation, folder permissions, downloads, Confidential folders, no hints, Support access, login, encryption, two logs, log protection and fixity, log retention, time and log writer | Q1–Q12 | Answered ("Go ahead please" to all recommendations): D-052 to D-063 |
 | 12 | 2026-10-20 | Search engine and triggers, search coverage, identifiers, search privacy, search test, deleted records, shared stored copy, details, expenses report rule, file protection, database version, technical defaults | Q1–Q12 | Answered ("go ahead" to all recommendations): D-064 to D-075 |
+| 13 | 2026-10-21 | Hosting, processing server, MySQL upgrade, recovery targets, backup location, backup retention, recovering deletions, exit, purge ledger and restore marker, restore tests, plan limits, ops budget, cost model to senior partner | Q1–Q13 | Answered ("go ahead please" to all recommendations): D-076 to D-088 |
 
 ## Change log for sequence
 

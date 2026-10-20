@@ -15,10 +15,10 @@ Status of each section. A section closes only after owner/partner review, never 
 | 06 | Upload and file-format support | 7 | Owner agreed | [06](sections/06-upload-and-file-format-support.md) | — | 2026-10-20 | Grilling Round 9 |
 | 07 | OCR and document understanding | 7 | Owner agreed; benchmark pending | [07](sections/07-ocr-and-document-understanding.md) | — | 2026-10-20 | Grilling Round 9 |
 | 08 | Versioning and approval | 6 | Owner agreed (combined with 05) | [05+08](sections/05-document-lifecycle-and-workflows.md) | — | 2026-10-20 | Grilling Round 8 |
-| 09 | Audit trails and integrity | 8 | Not started | — | — | — | Sections 05, 11 |
+| 09 | Activity log and integrity | 8 | Owner agreed; lawyer review of retention pending | [09](sections/09-audit-trails-and-integrity.md) | — | 2026-10-20 | Grilling Round 11 |
 | 10 | Authenticity and certified true copies | 5 | Owner agreed; lawyer review pending | [10](sections/10-authenticity-and-certified-true-copies.md) | [10–11](meeting-guides/10-11-legal-authenticity-and-privacy.md) | 2026-10-19 | Section 03 |
 | 11 | Philippine legal and regulatory research | 5 | Owner agreed; lawyer and tax review pending | [11](sections/11-philippine-legal-and-regulatory-research.md) | [10–11](meeting-guides/10-11-legal-authenticity-and-privacy.md) | 2026-10-19 | Section 03 |
-| 12 | Security and antivirus | 7–8 | File pipeline owner-agreed; wider security in Phase 8 | [12](sections/12-security-and-antivirus.md) | — | 2026-10-20 | Grilling Round 9 |
+| 12 | Security and antivirus | 7–8 | Owner agreed (file pipeline; access and isolation) | [12](sections/12-security-and-antivirus.md) | — | 2026-10-20 | Grilling Rounds 9, 11 |
 | 13 | Database and search architecture | 9 | Not started | — | — | — | Sections 05–09 |
 | 14 | Storage and server requirements | 10 | Not started | — | — | — | Section 13 |
 | 15 | Backup, retention, DR | 10 | Not started | — | — | — | Sections 11, 14 |
@@ -42,6 +42,8 @@ Status of each section. A section closes only after owner/partner review, never 
 | 7 | 2026-10-20 | Claims policy, certified copies, evidence features, processor duties, privacy features, professional brief | Q1–Q6 | Answered: D-029 to D-034 |
 | 8 | 2026-10-20 | Terms, filing rule, official marking, version states, concurrency, amendments, deletion, duplicates, details history | Q1–Q9 | Answered: D-035 to D-043 |
 | 9 | 2026-10-20 | File types, size limit, uploads, virus scanning, encrypted files, OCR engine, OCR benchmark, tool isolation | Q1–Q8 | Answered: D-044 to D-051 |
+| 10 | 2026-10-20 | Repository housekeeping: move files to the root, commit plan, public repository | — | Done; no product decisions |
+| 11 | 2026-10-20 | Company isolation, folder permissions, downloads, Confidential folders, no hints, Support access, login, encryption, two logs, log protection and fixity, log retention, time and log writer | Q1–Q12 | Answered ("Go ahead please" to all recommendations): D-052 to D-063 |
 
 ## Change log for sequence
 

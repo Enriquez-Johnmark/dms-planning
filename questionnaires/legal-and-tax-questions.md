@@ -82,6 +82,30 @@ Please mark each answer **confirmed**, **likely** or **unsure**. Short answers a
 
 >
 
+### A17. The privacy rules set no period for keeping logs (NPC Circular 2023-06 s.29). Is **2 years** right for our security log (logins, refused access, staff access)? May we keep a short "exit record" (company name, dates, export fingerprint, deletion certificate) after deleting a client's data?
+
+>
+
+### A18. We plan to keep **daily fingerprints (hashes) of each client's activity log for 10 years** in storage nobody can delete. Are such hashes personal data, and is the 10-year period defensible?
+
+>
+
+### A19. Does a fingerprint kept with an independent party (an AWS locked bucket, a foreign time-stamp service) help show integrity under the Rules on Electronic Evidence, Rule 7 s.2?
+
+>
+
+### A20. We group repeated views of the same document by one person into one log entry per 10 minutes, but log every download. Is that acceptable for law-firm clients?
+
+>
+
+### A21. What is the "specified period required by the NPC" for keeping incident logs (2023-06 s.29)?
+
+>
+
+### A22. Should our support-access rules (client approval, 4-hour limit, emergency "break-glass" access with notice within 24 hours) be written into the data processing addendum? Does emergency access without prior approval need the client's advance consent in the contract?
+
+>
+
 ## B. Tax adviser
 
 ### B1. Can scanned images replace paper **purchase invoices** and **BIR 2307s** for the 5-year retention period, or must the paper be kept? (RR 7-2024; RR 2-2015 mentions hard copies of withholding certificates.)

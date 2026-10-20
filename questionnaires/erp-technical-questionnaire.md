@@ -101,6 +101,48 @@ Provider, rough server size (CPU, RAM, disk), operating system, and who manages 
 
 >
 
+## Security details (added after Phase 8)
+
+These follow up questions 1, 8 and 9. "I don't know" is fine.
+
+### 18. If code runs without a current client company (a background job, a scheduled command), what happens to database queries?
+For example: they return every company's rows, they return nothing, or they stop with an error.
+
+_Why this matters: the Documents app will stop with an error in that case (decision D-052), and we need to know whether the rest of Officetul behaves the same way._
+
+>
+
+### 19. How does Officetul decide who may open a particular record, such as an expense or a project?
+For example: any user with the right role, only the record's owner, or by branch or department.
+
+_Why this matters: a document linked to a record can be shown to people who may open that record (D-053)._
+
+>
+
+### 20. Is there a "log in as user" (impersonation) feature, or do staff ever query the production database directly?
+
+_Why this matters: Officetul staff will see client documents only with the client's approval (D-057)._
+
+>
+
+### 21. Which database user does the app connect with? Is it an admin or root user? Do migrations run with the same user? Is the database on Amazon RDS or self-managed?
+
+_Why this matters: the activity log will be insert-only, which needs a separate user for migrations (D-061)._
+
+>
+
+### 22. Are record IDs in URLs plain numbers (`/expenses/881`) or random IDs (UUID or ULID)?
+
+>
+
+### 23. Is anything cached in front of logged-in pages (a CDN, a reverse proxy, page caching)? Are cache keys separated per company?
+
+>
+
+### 24. Which PHP version is in use, and does Officetul use Laravel Octane or other long-running workers?
+
+>
+
 ## Anything else?
 
 Anything about Officetul that a new module should know about, or must not break?

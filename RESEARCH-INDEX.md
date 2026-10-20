@@ -17,6 +17,8 @@ Raw research notes live in [`research/`](research/). Each note cites its own sou
 | R11 | [File formats and previews](research/R11-file-formats-and-previews.md) | Which formats to accept, preview and extract text from; tool licences and risks | Done 2026-10-20 | Section 06 |
 | R12 | [OCR engines and benchmark](research/R12-ocr-engines-and-benchmark.md) | Which OCR engine for English/Filipino search, at what cost, and how to test it | Done 2026-10-20 | Section 07 |
 | R13 | [Upload security and scanning](research/R13-upload-security-and-scanning.md) | How to receive large files safely, scan them, and fail closed | Done 2026-10-20 | Section 12 |
+| R14 | [Activity log and integrity](research/R14-activity-log-and-integrity.md) | What to log, how to make the log tamper-evident, fixity checks, PH log rules | Done 2026-10-20 | Section 09 |
+| R15 | [Tenant isolation and permissions](research/R15-tenant-isolation-and-permissions.md) | Keeping companies separate, folder permissions, permission-aware search, support access, MFA | Done 2026-10-20 | Sections 09, 12 |
 
 ## Not yet researched (planned)
 

@@ -42,7 +42,7 @@ Inspected 2026-10-18 (mattpocock-skills plugin v1.3.1, installed via AI Hero).
 | 5 | Legal, authenticity, records governance | Sections 10–11 | Legal assumptions, required controls, questions for a lawyer recorded | **Owner agreed (D-029 to D-034); professional review pending** |
 | 6 | Lifecycle, versioning, approvals | Sections 05, 08 | Lifecycle rules agreed | **Owner agreed (D-035 to D-043)** |
 | 7 | Files, upload security, OCR | Sections 06, 07, 12; file-format matrix | File-processing requirements documented | **Owner agreed (D-044 to D-051); OCR benchmark pending** |
-| 8 | Security, audit, isolation | Sections 09, 12 | Critical controls and audit objectives agreed | Not started |
+| 8 | Security, audit, isolation | Sections 09, 12 | Critical controls and audit objectives agreed | **Owner agreed (D-052 to D-063)** |
 | 9 | Database, search, storage, ERP | Sections 13, 16 | Data and integration decisions approved | Not started |
 | 10 | Infrastructure, cost, backup, DR | Sections 14, 15, 18 | Operating model is financially and operationally realistic | Not started |
 | 11 | MVP scope | Section 17 | Partner approves scope and release boundaries | Not started |

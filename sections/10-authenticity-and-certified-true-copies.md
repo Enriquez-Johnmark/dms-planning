@@ -43,7 +43,7 @@ Rule 7 weight factors mapped to features (R09 §6):
 | How it was **captured** | Capture record: source (upload, email, phone), user, time, device, email headers for emailed files | **MVP** (proposed) |
 | How it was **stored**; integrity since it was first in final form | SHA-256 at intake, stored apart from the file; original never modified; OCR, thumbnails and previews kept as linked derived files | **MVP** (D-026) |
 | Integrity checked over time | Scheduled re-hash ("fixity check") with logged results | **MVP** (proposed) |
-| Integrity of the **system** | Append-only activity log; access control; no hard delete of originals. Hash-chaining the log is a Phase 8 choice. | MVP (log) / Phase 8 (protection level) |
+| Integrity of the **system** | Append-only activity log; access control; no hard delete of originals. The log is hash-chained with a locked daily digest (D-061). | MVP |
 | **Who** created or approved it | Identity via the Officetul login and MFA; "official version" marking logs who, when and why | MVP |
 | Accurate **time** | Synced server clocks; trusted timestamps optional, later | MVP (clock) / later |
 | A witness or custodian can explain the system | Per-tenant system description; draft custodian affidavit for the tenant's lawyer | **Next release** ("Evidence pack") |

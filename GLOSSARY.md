@@ -83,3 +83,39 @@ _Avoid_: Linked document, child document
 **Trash**:
 Where deleted Documents and Drafts wait, restorable, until a company admin deletes them permanently.
 _Avoid_: Recycle bin, archive
+
+### Access
+
+**Access level**:
+What a person may do in a Folder: View, Contribute or Manage. Each level includes the one before it.
+_Avoid_: Permission level, role, share level
+
+**Restricted folder**:
+A Folder that ignores the access of the Folder above it and has its own list of who may see it.
+_Avoid_: Private folder, locked folder
+
+**Confidential folder**:
+A Restricted folder whose contents even company admins cannot see unless they add themselves, which is recorded and announced.
+_Avoid_: Secret folder, hidden folder
+
+**Support access**:
+Time-limited, read-only access to a company's Documents by Officetul staff, approved by that company's admin.
+_Avoid_: Impersonation, log in as user, admin override
+
+### Records of what happened
+
+**Activity log**:
+The company's record of what happened to its Documents and Folders and who did it. The company can see and export it.
+_Avoid_: Audit trail, history, audit log
+
+**Security log**:
+Officetul's own record of logins, two-factor checks, refused access and Support access.
+_Avoid_: Activity log, system log
+
+**Log digest**:
+A daily fingerprint of a company's Activity log, kept where nobody can change or delete it, so later tampering would show.
+_Avoid_: Backup, checksum file
+
+**Fixity check**:
+Re-reading a stored Original file to confirm it still matches the fingerprint taken when it arrived.
+_Avoid_: Integrity scan, virus scan

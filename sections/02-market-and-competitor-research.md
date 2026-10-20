@@ -109,7 +109,7 @@ These are product principles only. The data model is designed in Phases 6 and 9.
 
 1. **Include Documents in Officetul's subscription.** Use a generous storage allowance per company as the fair-use limit, with paid top-up blocks. Never charge per page for OCR. Charge only for **AI extraction**, when it exists (a later release), as a monthly quota plus top-up packs. *(Recommendation)*
 2. **Many-to-many labelled links** between documents and Officetul records. *(Recommendation)*
-3. **Folder-based permissions plus opt-in visibility through record links**, with a "why can I see this?" explanation. *(Recommendation; detail in Phase 8)*
+3. **Folder-based permissions plus opt-in visibility through record links**, with a "why can I see this?" explanation. *(Recommendation; detail agreed in Phase 8, D-053)*
 4. **Add two cheap, high-value items to the MVP:**
    - an **"Expenses without a receipt" report**;
    - **Philippine preset document types**: Official Receipt, Sales Invoice, BIR 2307, SEC GIS, Mayor's/Business Permit, Contract, and so on.

@@ -103,7 +103,7 @@ The master plan requires that "a newly uploaded file must not automatically beco
 
 ### 6.4 Who can do what (MVP)
 
-Permission names are provisional. The detail comes in Phase 8.
+Access levels confirmed by D-053 (Phase 8, [Section 12 Part B](12-security-and-antivirus.md)). Company admins don't see the contents of Confidential folders unless they add themselves (D-055). Downloading originals is a separate role ability (D-054).
 
 | Action | View | Contribute | Manage | Company admin |
 |---|---|---|---|---|
@@ -116,7 +116,7 @@ Permission names are provisional. The detail comes in Phase 8.
 
 ### 6.5 Activity log events (MVP)
 
-Captured, filed, version added, marked official, withdrawn, restored, details changed (old → new), linked or unlinked, moved, permissions changed, viewed, downloaded, exported, deleted, restored from Trash, deleted permanently, fixity check result. How strongly the log is protected is decided in Phase 8 (Section 09).
+Captured, filed, version added, marked official, withdrawn, restored, details changed (old → new), linked or unlinked, moved, permissions changed, viewed, downloaded, exported, deleted, restored from Trash, deleted permanently, fixity check result. Protection, visibility and retention are set in [Section 09](09-audit-trails-and-integrity.md) (D-060 to D-063).
 
 ## 7. Alternatives and Trade-offs
 

@@ -43,7 +43,7 @@ Inspected 2026-10-18 (mattpocock-skills plugin v1.3.1, installed via AI Hero).
 | 6 | Lifecycle, versioning, approvals | Sections 05, 08 | Lifecycle rules agreed | **Owner agreed (D-035 to D-043)** |
 | 7 | Files, upload security, OCR | Sections 06, 07, 12; file-format matrix | File-processing requirements documented | **Owner agreed (D-044 to D-051); OCR benchmark pending** |
 | 8 | Security, audit, isolation | Sections 09, 12 | Critical controls and audit objectives agreed | **Owner agreed (D-052 to D-063)** |
-| 9 | Database, search, storage, ERP | Sections 13, 16 | Data and integration decisions approved | Not started |
+| 9 | Database, search, storage, ERP | Sections 13, 16 | Data and integration decisions approved | **Owner agreed (D-064 to D-075); code review pending (D-013)** |
 | 10 | Infrastructure, cost, backup, DR | Sections 14, 15, 18 | Operating model is financially and operationally realistic | Not started |
 | 11 | MVP scope | Section 17 | Partner approves scope and release boundaries | Not started |
 | 12 | Architecture and roadmap | Sections 19–21, ADRs | Requirements and architecture mature enough to plan implementation | Not started |

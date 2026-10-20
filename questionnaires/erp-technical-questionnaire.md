@@ -143,6 +143,42 @@ _Why this matters: the activity log will be insert-only, which needs a separate 
 
 >
 
+## Data and search details (added after Phase 9)
+
+### 25. Do any Officetul tables already use MySQL full-text indexes? Have the server's full-text settings (minimum word length, stopwords) or the default character set and collation been changed?
+
+_Why this matters: some full-text settings apply to the whole server, so changing them for Documents would rebuild other apps' indexes._
+
+>
+
+### 26. Is there a global search bar in Officetul? Is Laravel Scout installed, and if so, with which engine?
+
+>
+
+### 27. What type are the ID columns: the company ID and record IDs such as an expense's? (Plain numbers, UUIDs or ULIDs?)
+
+_Why this matters: Links store a reference to the Officetul record, and must use the same type._
+
+>
+
+### 28. Do any tables store class names for polymorphic relations (e.g. `App\Models\Expense` in an `attachable_type` column)? Is a morph map in use?
+
+_Why this matters: Documents will turn on Laravel's enforced morph map, which applies to every app (D-075)._
+
+>
+
+### 29. How are records deleted in Officetul? For example soft deletes, permanent deletes, bulk deletes, or "void" instead of delete for posted accounting entries.
+
+_Why this matters: Documents keeps its files and marks the Link "record deleted" when a record goes (D-069), so it needs to know every way records disappear._
+
+>
+
+### 30. Is there an Expense (or Bill) model, and what is its table called? Which fields hold the supplier, amount and date?
+
+_Why this matters: the "Expenses without an invoice or receipt" report (D-023, D-072) reads it._
+
+>
+
 ## Anything else?
 
 Anything about Officetul that a new module should know about, or must not break?

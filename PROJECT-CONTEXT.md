@@ -31,9 +31,9 @@ Baseline as of 2026-10-18. Update this file when facts change, and link to the d
 
 | Assumption | Why it matters | How it gets validated |
 |---|---|---|
-| MySQL is retained for the DMS. | Avoids a second database platform for a small team. | Phase 9 comparison against confirmed requirements. |
+| ~~MySQL is retained for the DMS.~~ **Now decided (D-074):** MySQL, 8.4 LTS minimum. | Avoids a second database platform for a small team. | Phase 9 comparison done (R17 §8). |
 | A small development team (size unknown) will build and run the product. | Shapes every complexity and hosting choice. | Round 1 grilling. |
-| The DMS might integrate with the ERP, but must not depend on sharing its database. | Keeps the DMS sellable on its own. | Phase 9 integration contract. |
+| ~~The DMS might integrate with the ERP, but must not depend on sharing its database.~~ **Superseded:** Documents is a native Officetul app sharing its database (D-002, D-010), with a published contract for other apps (D-075, Section 16). | — | Phase 9 integration contract done. |
 | Philippine SMEs have limited IT budgets and staff. | Drives pricing, hosting, and admin burden. | R01 research + customer interviews. |
 
 All of these are **Working assumptions**. None is a decision.

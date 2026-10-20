@@ -19,11 +19,12 @@ Raw research notes live in [`research/`](research/). Each note cites its own sou
 | R13 | [Upload security and scanning](research/R13-upload-security-and-scanning.md) | How to receive large files safely, scan them, and fail closed | Done 2026-10-20 | Section 12 |
 | R14 | [Activity log and integrity](research/R14-activity-log-and-integrity.md) | What to log, how to make the log tamper-evident, fixity checks, PH log rules | Done 2026-10-20 | Section 09 |
 | R15 | [Tenant isolation and permissions](research/R15-tenant-isolation-and-permissions.md) | Keeping companies separate, folder permissions, permission-aware search, support access, MFA | Done 2026-10-20 | Sections 09, 12 |
+| R16 | [Search architecture](research/R16-search-architecture.md) | Which search engine and design for details and OCR text, with exact access filtering | Done 2026-10-20 | Section 13 |
+| R17 | [Data model and ERP integration](research/R17-data-model-and-erp-integration.md) | Tables, keys, Links to Officetul records, app contract, storage layout, MySQL vs PostgreSQL | Done 2026-10-20 | Sections 13, 16 |
 
 ## Not yet researched (planned)
 
 - Philippine legal research in depth: e-Commerce Act, Rules on Electronic Evidence, notarial rules, certified true copies (Phase 5)
 - Industry workflow mapping per segment (Phase 3, mostly from interviews)
 - OCR tool benchmark design, including Filipino-language support (Phase 7)
-- MySQL vs PostgreSQL for confirmed requirements (Phase 9)
 - Hosting prices in the Philippines and region (Phase 10)

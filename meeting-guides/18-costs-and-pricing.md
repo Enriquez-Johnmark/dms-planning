@@ -41,7 +41,9 @@ Documents has a **fixed running cost** of about ₱13,000–21,000 a month (**Es
 3. **Allowances:** is something like 25 GB and 3,000 OCR pages a month per company, with paid top-ups, about right?
 4. **Back-file scanning** (e.g. 30 years of old files): quote it as a separate project?
 5. **Our time:** what hourly rate should the cost model use for ops time?
-6. **Scope and team:** do you approve the MVP scope in Section 17, with **two full-time developers** and our own pilot about **8 months** after approval (range 7–10), the first client about 3 months later? With one developer it takes about twice as long. (**Estimate**)
+6. **Scope and team** (can be approved even if pricing needs another meeting, D-105): do you approve the MVP scope in Section 17, with **two full-time developers** and our own pilot about **8 months** after approval (range 7–10), the first client about 3 months later? With one developer it takes about twice as long. (**Estimate**)
+7. **Second client:** will you agree in writing that no second external client starts before staff support access with emergency rules is built and tested, the second restore drill is done, and the first client has run 6 weeks with no open blocking bug (D-109)?
+8. **Top risks:** review the Top 10 in [Section 19](../sections/19-risk-register.md), especially the ones you own: approval timing (RK-74), NPC registration (RK-23), naming the lawyer and tax adviser (RK-80), and sales promises (RK-82).
 
 ## Options and Trade-offs
 
@@ -64,6 +66,7 @@ Documents has a **fixed running cost** of about ₱13,000–21,000 a month (**Es
 | Allowances | The app's quota settings stay placeholders |
 | Ops hourly rate | The cost model stays an estimate |
 | MVP scope, timeline, two developers | The build can't start (Gate 0) |
+| Second-client gate (D-109) | A second client could be promised before we can support them safely |
 
 ## Information Needed Before the Meeting
 

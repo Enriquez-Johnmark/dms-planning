@@ -25,9 +25,9 @@ Status of each section. A section closes only after owner/partner review, never 
 | 16 | ERP integration and data model | 9 | Owner agreed; code review pending (D-013) | [16](sections/16-erp-integration-and-data-model.md) | — | 2026-10-20 | Grilling Round 12 |
 | 17 | MVP scope and prioritisation | 11 | Owner agreed; **senior partner approval pending** | [17](sections/17-mvp-scope-and-prioritisation.md) | [18](meeting-guides/18-costs-and-pricing.md) | 2026-10-21 | Senior partner approves scope, timeline, team |
 | 18 | Cost estimates and operating model | 10 | Owner agreed; **pricing awaits senior partner** | [18](sections/18-cost-estimates-and-operating-model.md) | [18](meeting-guides/18-costs-and-pricing.md) | 2026-10-21 | Senior partner pricing meeting |
-| 19 | Risk register | all | Not started | — | — | — | Living document, started in Phase 1 |
-| 20 | Architecture proposal | 12 | Not started | — | — | — | Section 17 |
-| 21 | Implementation roadmap | 12–13 | Not started | — | — | — | Section 20 |
+| 19 | Risk register | all | Owner agreed; reviewed monthly (D-106) | [19](sections/19-risk-register.md) | [18](meeting-guides/18-costs-and-pricing.md) | 2026-10-21 | Monthly review; Top 10 to senior partner at each gate |
+| 20 | Architecture proposal | 12 | Owner agreed; code review pending (D-013) | [20](sections/20-architecture-proposal.md) | — | 2026-10-21 | Code review |
+| 21 | Implementation roadmap | 12–13 | Owner agreed; depends on senior partner approval | [21](sections/21-implementation-roadmap.md) | [18](meeting-guides/18-costs-and-pricing.md) | 2026-10-21 | Gate 0 |
 
 ## Grilling rounds
 
@@ -47,6 +47,7 @@ Status of each section. A section closes only after owner/partner review, never 
 | 12 | 2026-10-20 | Search engine and triggers, search coverage, identifiers, search privacy, search test, deleted records, shared stored copy, details, expenses report rule, file protection, database version, technical defaults | Q1–Q12 | Answered ("go ahead" to all recommendations): D-064 to D-075 |
 | 13 | 2026-10-21 | Hosting, processing server, MySQL upgrade, recovery targets, backup location, backup retention, recovering deletions, exit, purge ledger and restore marker, restore tests, plan limits, ops budget, cost model to senior partner | Q1–Q13 | Answered ("go ahead please" to all recommendations): D-076 to D-088 |
 | 14 | 2026-10-21 | Timeline and team, Should list, production pilot, Inbox visibility, folders-only access, scan-to-email, first-client support, Officetul platform work, usage meters, housekeeping | Q1–Q10 | Answered ("go ahead please" to all recommendations): D-089 to D-098 |
+| 15 | 2026-10-21 | Pipeline workers, purge ledger storage, purge DB user, Security log copy, download CDN, build order, long-lead tasks, risk ownership, risk statuses, first-client criteria, second-client gate, housekeeping | Q1–Q12 | Answered ("go ahead please" to all recommendations): D-099 to D-110 |
 
 ## Change log for sequence
 

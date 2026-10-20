@@ -46,7 +46,7 @@ Inspected 2026-10-18 (mattpocock-skills plugin v1.3.1, installed via AI Hero).
 | 9 | Database, search, storage, ERP | Sections 13, 16 | Data and integration decisions approved | **Owner agreed (D-064 to D-075); code review pending (D-013)** |
 | 10 | Infrastructure, cost, backup, DR | Sections 14, 15, 18 | Operating model is financially and operationally realistic | **Owner agreed (D-076 to D-088); pricing with the senior partner** |
 | 11 | MVP scope | Section 17 | Partner approves scope and release boundaries | **Owner agreed (D-089 to D-098); senior partner approval pending** |
-| 12 | Architecture and roadmap | Sections 19–21, ADRs | Requirements and architecture mature enough to plan implementation | Not started |
+| 12 | Architecture and roadmap | Sections 19–21, ADRs | Requirements and architecture mature enough to plan implementation | **Owner agreed (D-099 to D-110); ADRs 0001–0006 in `docs/adr/`** |
 | 13 | Implementation handoff | Spec, tickets, test plan, coding prompt | All prior gates closed or explicitly waived | Not started |
 
 The order follows dependencies: who the customer is (1–3) decides which workflows, laws, and standards matter (4–5), which decide the document model (6), which decides the technical design (7–10) and scope (11–13). Any change to the order is recorded in [DISCUSSION-TRACKER.md](DISCUSSION-TRACKER.md) with its reason.

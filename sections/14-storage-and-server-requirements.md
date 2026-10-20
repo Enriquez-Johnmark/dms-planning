@@ -40,7 +40,8 @@ Clients care that their files are safe, fast to open from Manila, and handled un
 
 | Component | Where | Shared with Officetul? |
 |---|---|---|
-| Web and queue workers (Laravel) | Officetul's app servers | Yes |
+| Web servers and light queue jobs (Laravel) | Officetul's app servers | Yes |
+| File-pipeline workers (validate, scan, convert, OCR, fixity), with their own settings, DB user and storage role (D-099) | Processing server, outside the tool containers | No |
 | Processing server (ClamAV, Gotenberg/LibreOffice, Tika, OCRmyPDF/Tesseract, libvips), each in its own container with no network (D-051) | One dedicated 16 GB server | No |
 | MySQL 8.4 (managed) | Officetul's database | Yes (Documents adds tables) |
 | Object storage: quarantine, originals (versioned), derived, exports, digests (locked) (D-075) | AWS S3 Singapore or the provider's equivalent | No |

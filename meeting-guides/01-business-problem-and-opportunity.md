@@ -8,7 +8,7 @@ The senior partner **confirms or changes** the direction the project owner agree
 
 ## Why This Matters to the Business
 
-These decisions fix what we build for the next 4–6 months. Changing them now is cheap; changing them after development starts is not.
+These decisions fix what we build for the coming months (about 8 months to our own pilot, D-089). Changing them now is cheap; changing them after development starts is not.
 
 ## Plain-Language Explanation
 
@@ -27,7 +27,7 @@ These decisions fix what we build for the next 4–6 months. Changing them now i
 
 ## Questions to Discuss
 
-1. **Do you approve the direction?** A Documents app inside Officetul, for all our SME clients, built by 1–2 developers, with a pilot about 4–6 months after the scope is approved.
+1. **Do you approve the direction?** A Documents app inside Officetul, for all our SME clients, built by two full-time developers, with our own pilot about 8 months after the scope is approved and the first client about 3 months later (D-089; updated 2026-10-21).
 2. **Is the first version right?** It covers capture, search, folders, permissions, history, and attaching documents to Officetul records. Approval chains, reminders and retention rules come in the next version.
 3. **Pilot:** does our own company use it for 2–4 weeks before a client does? Which client comes next?
 4. **ISO (future goal):** use the separate [ISO meeting guide](04-iso-certification.md). Which standard and when is your decision (D-028), and it does not hold up the project.

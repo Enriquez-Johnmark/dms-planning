@@ -48,7 +48,7 @@ Clients email and upload files from anywhere. A single malicious file that reach
 5. **Promote:** move to permanent storage under a random name; record the fingerprint.
 6. **Process:** previews and OCR in isolated queues. A failure here does not block the original.
 7. **Inbox:** the item appears for review (D-014), visible only to that company.
-8. **Serve:** permission check every time; short-lived link on a separate domain; forced download; no content sniffing.
+8. **Serve:** permission check every time; 5-minute link through a CDN on a separate domain that adds `nosniff` and CSP `sandbox` (D-103); forced download; no caching.
 
 ### 6.2 Failure handling *(Recommendation, R13 §10)*
 

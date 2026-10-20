@@ -24,6 +24,8 @@ Raw research notes live in [`research/`](research/). Each note cites its own sou
 | R18 | [Hosting and cost model](research/R18-hosting-and-cost-model.md) | Where to host, monthly cost per tier and per company, pricing implications, ops model | Done 2026-10-20 | Sections 14, 18 |
 | R19 | [Backup, retention and disaster recovery](research/R19-backup-retention-and-disaster-recovery.md) | Recovery targets, backups, exit deletion, restore testing, disaster scenarios | Done 2026-10-20 | Section 15 |
 | R20 | [MVP scope synthesis](research/R20-mvp-scope-synthesis.md) | MVP feature inventory from D-001–D-088, conflicts, effort vs timeline, release gates | Done 2026-10-21 | Section 17 |
+| R21 | [Architecture proposal](research/R21-architecture-proposal.md) | Context, components, key flows, deployment, cross-cutting concerns, code-review checks; ADRs in `docs/adr/` | Done 2026-10-21 | Section 20 |
+| R22 | [Risk register and roadmap](research/R22-risk-register-and-roadmap.md) | All risks RK-01–RK-85 ranked with owners; month-by-month roadmap, critical path, next release | Done 2026-10-21 | Sections 19, 21 |
 
 ## Not yet researched (planned)
 

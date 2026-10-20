@@ -1,10 +1,11 @@
-# Meeting Guide — Costs and Pricing for Documents
+# Meeting Guide — Costs, Pricing and MVP Scope for Documents
 
 **Duration:** about 30–45 minutes. **Detail:** [Section 18](../sections/18-cost-estimates-and-operating-model.md), [Section 14](../sections/14-storage-and-server-requirements.md), [Section 15](../sections/15-backup-retention-and-disaster-recovery.md). **Follows:** [meeting guide 02](02-erp-document-apps-and-pricing.md), where pricing was deferred until costs were known (D-018).
 
 ## Meeting Objective
 
-Decide **how Documents is priced**: included in the Officetul subscription, as an add-on, or a mix of both, and what the storage and OCR allowances are.
+1. Decide **how Documents is priced**: included in the Officetul subscription, as an add-on, or a mix of both, and what the storage and OCR allowances are.
+2. Approve the **MVP scope, timeline and team** ([Section 17](../sections/17-mvp-scope-and-prioritisation.md)): two full-time developers, our own pilot about 8 months after approval, the first client about 3 months later (D-089).
 
 ## Why This Matters to the Business
 
@@ -40,6 +41,7 @@ Documents has a **fixed running cost** of about ₱13,000–21,000 a month (**Es
 3. **Allowances:** is something like 25 GB and 3,000 OCR pages a month per company, with paid top-ups, about right?
 4. **Back-file scanning** (e.g. 30 years of old files): quote it as a separate project?
 5. **Our time:** what hourly rate should the cost model use for ops time?
+6. **Scope and team:** do you approve the MVP scope in Section 17, with **two full-time developers** and our own pilot about **8 months** after approval (range 7–10), the first client about 3 months later? With one developer it takes about twice as long. (**Estimate**)
 
 ## Options and Trade-offs
 
@@ -61,6 +63,7 @@ Documents has a **fixed running cost** of about ₱13,000–21,000 a month (**Es
 | Pricing model | We can't finalise plan limits in the MVP scope (Section 17) |
 | Allowances | The app's quota settings stay placeholders |
 | Ops hourly rate | The cost model stays an estimate |
+| MVP scope, timeline, two developers | The build can't start (Gate 0) |
 
 ## Information Needed Before the Meeting
 
